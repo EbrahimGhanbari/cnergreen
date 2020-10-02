@@ -8,6 +8,7 @@ import './index.css';
 
 // components
 import App from './App';
+import Main from './components/Main/Main'
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
@@ -20,7 +21,7 @@ const routing = (
     <div>
     <Router>
         <Switch>
-            <Route exact path="/" component={App} />
+            <Route exact path="/" component={Main} />
             <Route path="/home" component={Home} />
             <Route path="/solution" component={Solution} />
             <Route path="/blog" component={Blog} />
