@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Main.scss';
 import { Link } from "react-router-dom";
+import { FaRegHandPointRight } from 'react-icons/fa';
 
 
 
@@ -10,7 +11,7 @@ function Main (props) {
     <div className="topSection">
       <div className="topNav">
         <div>
-          <img id="logo" src="cat.jpg" alt="Italian Trulli"/>
+          <img id="logo" src="cnergreenlogo.png" alt="Italian Trulli"/>
         </div>
         <div className="topButtonGroup">
           <Link className="topButton" to="/home">Home</Link>
@@ -21,15 +22,17 @@ function Main (props) {
         </div>
       </div>
       <div className="topText">
-        <div className="title">
+        <div className="titleMain">
           Clean and Efficient Hydrocarbon Production
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        </p>
-        <button>
-          Learn more
-        </button>
+        <div className="txtAndButton">
+          <div className="textAfterTitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          </div>
+          <div>
+          <button className="learnMoreButton">Learn More <FaRegHandPointRight id="learnMoreIcon" /></button>
+          </div>
+        </div>
       </div>
     </div>
   );
