@@ -3,7 +3,7 @@ import './Main.scss';
 
 import SectionOne from './SectionOne';
 import SectionGrid from './SectionGrid';
-import SectionContent from './SectionContent';
+import SectionDescrip from './SectionDescrip';
 
 function Main (props) {
 
@@ -25,7 +25,8 @@ function Main (props) {
     <div>
       <SectionOne />
       <SectionGrid gridInput = {gridInputTop} />
-      <SectionContent />
+      <SectionDescrip direction = {"left"}/>
+      <SectionDescrip direction = {"right"}/>
       <SectionGrid gridInput = {gridInputButtom} />
     </div>
   );
