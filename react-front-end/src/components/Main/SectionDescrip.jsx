@@ -4,22 +4,23 @@ import { FaRegHandPointRight } from 'react-icons/fa';
 
 
 
-function SectionContent ({}) {
+function SectionContent ({content, direction}) {
+
 
   return (
-    <div className="descripContainer">
+    <div className={`descripContainer ${direction}`}>
         <div className="descripTextContainer">
             <div className="descripTextContainerTitle">
                 Main Products (Foam)
             </div>
             <div>
               <ul>
-                <li>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing</li>
-                <li>Lorem Ipsum is simply dummy text of the printing</li>
-                <li>Lorem Ipsum is simply dummy text of the printing</li>
+                <li>{content.text[0]}</li>
+                <li>{content.text[1]}</li>
+                <li>{content.text[2]}</li>
               </ul> 
             </div>
-            <div>
+            <div className="learnMoreButtonDiv">
               <button className="learnMoreButtonWhite">Learn More <FaRegHandPointRight id="learnMoreIcon" /></button>
             </div>
         </div>
