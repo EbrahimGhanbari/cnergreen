@@ -1,88 +1,56 @@
 @import '../../styles/variables.scss';
 
-.topSection{
-    height: 100vh;
-    background-color: $base-color;
-}
-.topButton{
-    color: $base-color;
-    font-family: $title-font;
-    font-weight: 300;
-    font-size: 22px;
-    margin: 2vw;
-    color: $font-color;
-    text-decoration: none;
-    
-  }
-.topButtonGroup{
-    padding-top: 45px;
-    padding-right: 108px;
-}
-.topNav {
+.contactUsParent{
     display: flex;
-    justify-content: space-between;
-  }
-
-#logo {
-    width: 179px;
-    height: 182px;
-    padding-top: 19px;
-    padding-left: 21px;
+    justify-content: center;
 
 }
 
-.topText{
+.contactUsForm{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
-
-}
-.titleMain{
-    width: 40vw;
-    font-family: $title-font;
-    font-weight: 700;
-    font-size: 54px;
-    padding-left: 18.5vw;
-    padding-top: 5vh;
-}
-
-.txtAndButton{
-    padding-top: 6vh;
-    display: flex;
-    padding-left: 18.5vw;
-    padding-right: 18.5vw;
-
-}
-.textAfterTitle{
-    font-family: $title-font;
-    width: 42vw;
-    font-weight: 400;
-    font-size: 22px;
+    .contactUsTitle{
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 30px;
+    }
 
 
-    
-}
+    .contactUs{
+        width: 42vw;
+        height: 7.4vh;
+        border-radius: 23px;
+        margin-bottom: 3vh;
+        padding-bottom: 2.3vh;
+        padding-top: 2.3vh;
+        padding-right: 3vw;
+        padding-left: 3vw;
 
-.learnMoreButton{
-    
-    margin-left: 6vw;
-    border-radius: 20px;
-    font-family: $title-font;
-    font-weight: 700;
-    font-size: 23px;
-    width: 19vw;
-    height: 10vh;
+        font-family: $title-font;
+        font-weight: 400;
+        font-size: 19px;
 
-    color: white;
-    background-color: black;
+    }
+
+
 
 
 }
-#learnMoreIcon{
-    padding-left: 2vw;
-    font-size: 23px;
+
+
+#contactUsSubmit{
+    width: 10vw;
+    margin-bottom: 0vh;
 }
 
-.learnMoreButton:hover{
-    background-color: rgb(29, 29, 29); 
+#content{
+    height: 31.2vh;
+
+    overflow-wrap: break-word;
+    word-wrap:break-word;
+    word-break: break-all;
+
+
 }
