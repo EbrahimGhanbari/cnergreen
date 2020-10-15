@@ -1,9 +1,6 @@
 import { useState } from "react";
 import React from 'react';
 
-// import './SectionOne.scss';
-// import { Link } from "react-router-dom";
-
 import TopNavBar from "../TopNavBar";
 
 import './Contact.scss'
@@ -15,8 +12,6 @@ function Contact (props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-
   };
 
   const handleChange = (event) => {
