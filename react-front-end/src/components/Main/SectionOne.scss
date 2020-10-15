@@ -4,38 +4,10 @@
     height: 100vh;
     background-color: $base-color;
 }
-.topButton{
-    color: $base-color;
-    font-family: $title-font;
-    font-weight: 300;
-    font-size: 22px;
-    margin: 2vw;
-    color: $font-color;
-    text-decoration: none;
-    
-  }
-.topButtonGroup{
-    padding-top: 45px;
-    padding-right: 108px;
-}
-.topNav {
-    display: flex;
-    justify-content: space-between;
-  }
-
-#logo {
-    width: 179px;
-    height: 182px;
-    padding-top: 19px;
-    padding-left: 21px;
-
-}
 
 .topText{
     display: flex;
     flex-direction: column;
-    
-
 }
 .titleMain{
     width: 40vw;
@@ -58,9 +30,6 @@
     width: 42vw;
     font-weight: 400;
     font-size: 22px;
-
-
-    
 }
 
 .learnMoreButton{

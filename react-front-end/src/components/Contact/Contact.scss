@@ -15,6 +15,7 @@
         font-family: $title-font;
         font-weight: 700;
         font-size: 30px;
+ 
     }
 
 
@@ -34,23 +35,23 @@
 
     }
 
-
-
-
-}
-
-
-#contactUsSubmit{
-    width: 10vw;
-    margin-bottom: 0vh;
-}
-
-#content{
-    height: 31.2vh;
-
-    overflow-wrap: break-word;
-    word-wrap:break-word;
-    word-break: break-all;
+    #contactUsSubmit{
+        width: 10vw;
+        margin-bottom: 0vh;
+    }
+    
+    #content{
+        height: 31.2vh;
+    
+        overflow-wrap: break-word;
+        word-wrap:break-word;
+        word-break: break-all;
+    
+    
+    }
 
 
 }
+
+
+

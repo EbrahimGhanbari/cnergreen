@@ -3,13 +3,16 @@ import './SectionOne.scss';
 import { Link } from "react-router-dom";
 import { FaRegHandPointRight } from 'react-icons/fa';
 
+import TopNavBar from "../TopNavBar";
+
 
 
 function SectionOne (props) {
 
   return (
     <div className="topSection">
-      <div className="topNav">
+      <TopNavBar />
+      {/* <div className="topNav">
         <div>
           <img id="logo" src="cnergreenlogo.png" alt="Italian Trulli"/>
         </div>
@@ -20,7 +23,7 @@ function SectionOne (props) {
           <Link className="topButton" to="/team">Team</Link>
           <Link className="topButton" to="/contact">Contact</Link>
         </div>
-      </div>
+      </div> */}
       <div className="topText">
         <div className="titleMain">
           Clean and Efficient Hydrocarbon Production
