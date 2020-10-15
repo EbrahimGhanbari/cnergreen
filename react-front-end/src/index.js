@@ -10,7 +10,7 @@ import './index.css';
 import App from './App';
 import Main from './components/Main/Main'
 import Home from './components/Home';
-import Contact from './components/Contact';
+import Contact from './components/Contact/Contact';
 import Blog from './components/Blog';
 import Solution from './components/Solution';
 import Team from './components/Team';
