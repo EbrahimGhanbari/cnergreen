@@ -14,7 +14,8 @@ import Contact from './components/Contact/Contact';
 import Blog from './components/Blog';
 import Solution from './components/Solution';
 import Team from './components/Team';
-
+import RequestInfo from './components/Contact/RequestInfo';
+import Questionnaire from './components/Contact/Questionnaire';
 
 
 
@@ -28,6 +29,9 @@ const routing = (
             <Route path="/blog" component={Blog} />
             <Route path="/team" component={Team} />
             <Route path="/contact" component={Contact} />
+            <Route path="/requestInfo" component={RequestInfo} />
+            <Route path="/questionnaire" component={Questionnaire} />
+            
         </Switch>
     </Router>
     </div>

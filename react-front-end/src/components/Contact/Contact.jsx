@@ -1,57 +1,38 @@
-import { useState } from "react";
 import React from 'react';
 
+import { Link } from "react-router-dom";
 import TopNavBar from "../TopNavBar";
 
 import './Contact.scss'
 
 function Contact (props) {
 
-
-  const [message, setMessage] = useState({})
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
-
-  const handleChange = (event) => {
-    event.preventDefault();
-
-    switch (event.target.id) {
-      case "email":
-        setMessage({...message, email: event.target.value});
-        break;
-      case "name":
-        setMessage({...message, name: event.target.value});
-        break;
-      case "content":
-        setMessage({...message, content: event.target.value});
-        break;
-    }
-
-  };
-
   return (
     <div className="topSection">
       <TopNavBar />
-      <div className="contactUsParent">
-        <form className="contactUsForm">
-          <p className="contactUsTitle">What Can We Help You With?</p>
-          <label>
-            <input className="contactUs" placeholder="Name" type="text" id="name"  onChange= { handleChange }/>
-          </label>
-          <label> 
-            <input className="contactUs" placeholder="Email" type="text" id="email" onChange= { handleChange }/>
-          </label>
-          <label>
-            <textarea className="contactUs" placeholder="Your Inquery" type="text" id="content"  onChange= { handleChange }/>
-          </label>
-          <label>
-            <input className="contactUs" type="submit" value="Submit" id="contactUsSubmit" onSubmit={handleSubmit} />            
-          </label>
-      </form>
+      <div className="contactTitle">We Want To Hear From You!</div>
+        
+      <nav className="contactButtons">
+        <button className="contactButtonItem">
+          <Link to="/questionnaire">Start a Project</Link>
+        </button>
+        OR
+        <button className="contactButtonItem">
+        <Link to="/requestInfo">Request Information</Link>
+        </button>
+      </nav>
+      <div className="contactText">
+        <div>
+          For everything else:
+        </div>
+        <div>
+        <a href="mailto:info@cnergreen.com">info@cnergreen.com</a>
+        </div>
       </div>
     </div>
+
+
+    
   );
     
 }

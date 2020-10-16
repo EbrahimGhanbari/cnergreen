@@ -37,18 +37,18 @@ function Contact (props) {
       <div className="contactUsParent">
         <form className="contactUsForm">
           <p className="contactUsTitle">What Can We Help You With?</p>
-          <label>
+          <div>
             <input className="contactUs" placeholder="Name" type="text" id="name"  onChange= { handleChange }/>
-          </label>
-          <label> 
+          </div>
+          <div> 
             <input className="contactUs" placeholder="Email" type="text" id="email" onChange= { handleChange }/>
-          </label>
-          <label>
+          </div>
+          <div>
             <textarea className="contactUs" placeholder="Your Inquery" type="text" id="content"  onChange= { handleChange }/>
-          </label>
-          <label>
-            <input className="contactUs" type="submit" value="Submit" id="contactUsSubmit" onSubmit={handleSubmit} />            
-          </label>
+          </div>
+          <div>
+            <input className="contactUs" type="submit" value="Send Message" id="contactUsSubmit" onSubmit={handleSubmit} />            
+          </div>
       </form>
       </div>
     </div>
