@@ -12,7 +12,7 @@ function Contact(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:8080/a", message)
+      .post("http://localhost:8080/message", message)
       .then(function (response) {
         console.log(response);
       })
