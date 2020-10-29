@@ -9,11 +9,11 @@ import './index.css';
 // components
 import App from './App';
 import Main from './components/Main/Main'
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
-import Blog from './components/Blog';
-import Solution from './components/Solution';
-import Team from './components/Team';
+import Blog from './components/Blog/Blog';
+import Solution from './components/Solution/Solution';
+import Team from './components/Team/Team';
 import RequestInfo from './components/Contact/RequestInfo';
 import Questionnaire from './components/Contact/Questionnaire';
 
