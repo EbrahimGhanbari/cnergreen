@@ -1,14 +1,21 @@
-import React from 'react';
+import React from "react";
+import TopNavBar from "../TopNavBar";
+import TeamMember from "./TeamMember";
 
+import './Team.scss'
 
-function Team (props) {
-
+function Team(props) {
   return (
     <div>
-      <h1>THIS IS Team</h1>
+      <TopNavBar />
+      <div className='team_container'>
+        <TeamMember />
+        <TeamMember />
+        <TeamMember />
+        <TeamMember />
+      </div>
     </div>
   );
-    
 }
 
 export default Team;
