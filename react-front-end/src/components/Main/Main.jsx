@@ -4,6 +4,7 @@ import './Main.scss';
 import SectionOne from './SectionOne';
 import SectionGrid from './SectionGrid';
 import SectionDescrip from './SectionDescrip';
+import DemoPlotly from './DemoPlotly';
 
 function Main (props) {
 
@@ -45,6 +46,7 @@ function Main (props) {
       <SectionDescrip direction = {"left"} content = {content.e1}/>
       <SectionDescrip direction = {"right"} content = {content.e2}/>
       <SectionGrid gridInput = {gridInputButtom} />
+      <DemoPlotly />
     </div>
   );
 
