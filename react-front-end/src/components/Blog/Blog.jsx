@@ -27,20 +27,97 @@ function Blog(props) {
           <button className="read_more_button">Read More </button>
         </div>
       </div>
-      <div className="blog_container">
-        <div className="blog_box1"></div>
-        <div className="blog_sub_container">
-          <div className="blog_box2"></div>
-          <div className="blog_box3"></div>
+      <div className="blog_container" id="blog_container">
+        <div className="blog_box1">
+          <div className="blog_box_content">
+            <p className="blog_box_text">Lorem IPSUM DOLOR AMET CONSECTETUER</p>
+            <a className="blog_box_learn" href="url">
+              Learn More >
+            </a>
+          </div>
         </div>
+        <div className="dummy_gap_vert"></div>
         <div className="blog_sub_container">
-          <div className="blog_box2"></div>
-          <div className="blog_box3"></div>
+          <div className="blog_box2">
+            <div className="blog_box_content">
+              <p className="blog_box_text">
+                Lorem IPSUM DOLOR AMET CONSECTETUER
+              </p>
+              <a className="blog_box_learn" href="url">
+                Learn More >
+              </a>
+            </div>
+          </div>
+          <div className="dummy_gap_horz"></div>
+          <div className="blog_box3">
+          <div className="blog_box_content">
+              <p className="blog_box_text">
+                Lorem IPSUM DOLOR AMET CONSECTETUER
+              </p>
+              <a className="blog_box_learn" href="url">
+                Learn More >
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="blog_box1"></div>
+        <div className="dummy_gap_vert"></div>
         <div className="blog_sub_container">
-          <div className="blog_box2"></div>
-          <div className="blog_box3"></div>
+          <div className="blog_box2">
+            <div className="blog_box_content">
+              <p className="blog_box_text">
+                Lorem IPSUM DOLOR AMET CONSECTETUER
+              </p>
+              <a className="blog_box_learn" href="url">
+                Learn More >
+              </a>
+            </div>
+          </div>
+          <div className="dummy_gap_horz"></div>
+          <div className="blog_box3">
+          <div className="blog_box_content">
+              <p className="blog_box_text">
+                Lorem IPSUM DOLOR AMET CONSECTETUER
+              </p>
+              <a className="blog_box_learn" href="url">
+                Learn More >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="dummy_gap_vert"></div>
+        <div className="blog_box1">
+        <div className="blog_box_content">
+              <p className="blog_box_text">
+                Lorem IPSUM DOLOR AMET CONSECTETUER
+              </p>
+              <a className="blog_box_learn" href="url">
+                Learn More >
+              </a>
+            </div>
+        </div>
+        <div className="dummy_gap_vert"></div>
+        <div className="blog_sub_container">
+          <div className="blog_box2">
+          <div className="blog_box_content">
+              <p className="blog_box_text">
+                Lorem IPSUM DOLOR AMET CONSECTETUER
+              </p>
+              <a className="blog_box_learn" href="url">
+                Learn More >
+              </a>
+            </div>
+          </div>
+          <div className="dummy_gap_horz"></div>
+          <div className="blog_box3">
+          <div className="blog_box_content">
+              <p className="blog_box_text">
+                Lorem IPSUM DOLOR AMET CONSECTETUER
+              </p>
+              <a className="blog_box_learn" href="url">
+                Learn More >
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
