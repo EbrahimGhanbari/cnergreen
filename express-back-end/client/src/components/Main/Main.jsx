@@ -46,7 +46,7 @@ function Main (props) {
       <SectionDescrip direction = {"left"} content = {content.e1}/>
       <SectionDescrip direction = {"right"} content = {content.e2}/>
       <SectionGrid gridInput = {gridInputButtom} />
-      <DemoPlotly />
+      {/* <DemoPlotly /> */}
     </div>
   );
 
