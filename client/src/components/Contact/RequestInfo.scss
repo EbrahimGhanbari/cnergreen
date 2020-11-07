@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.contactUsParent{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contactUsForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .contactUsTitle{
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .contactUs{
+        width: 42vw;
+        height: 7.4vh;
+        border-radius: 23px;
+        margin-bottom: 3vh;
+        padding-bottom: 2.3vh;
+        padding-top: 2.3vh;
+        padding-right: 3vw;
+        padding-left: 3vw;
+
+        font-family: $title-font;
+        font-weight: 400;
+        font-size: 19px;
+
+    }
+
+    #contactUsSubmit{
+        margin-bottom: 0vh;
+        background: $button-background-transparent;
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 19px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    
+    #content{
+        height: 31.2vh;
+    
+        overflow-wrap: break-word;
+        word-wrap:break-word;
+        word-break: break-all;
+    }
+
+}
+
+
+

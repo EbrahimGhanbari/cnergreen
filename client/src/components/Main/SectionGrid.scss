@@ -1,0 +1,61 @@
+@import '../../styles/variables.scss';
+
+.descripContainer{
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-bottom: 16vh;
+
+
+    
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.descripImg{
+    width: 42vw;
+    height: 60vh;
+    // background-color: $base-color;
+    background-color: lightseagreen;
+}
+
+
+.descripTextContainer{
+    padding-top: 4vh;
+    padding-bottom: 12vh;
+    width: 40vw;
+    font-family: $title-font;
+
+}
+.descripTextContainerTitle{
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 10vh;
+}
+
+.learnMoreButtonWhite{
+    
+    margin-left: 6vw;
+    border-radius: 20px;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 23px;
+    width: 19vw;
+    height: 10vh;
+    color: #2D4040;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    box-shadow: -8px -8px 18px #FFFFFF;
+
+}
+
+.learnMoreButtonDiv{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}

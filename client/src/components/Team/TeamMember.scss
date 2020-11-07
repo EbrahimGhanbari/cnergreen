@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.team_member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 21vw;
+  height: 62vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .team {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .team_img {
+    background: black;
+    height: 23vh;
+    width: 17vw;
+    margin-top: 6vh;
+  }
+
+  .team_name {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .team_title {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .team_desc {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .team_icon {
+    padding-left: 1.7vw;
+    color: #0e76a8;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 1vh;
+  }
+}

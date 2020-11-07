@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+
+
+
+.contactTitle{
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 54px;
+    padding-top: 4.2vh;
+    padding-bottom: 10.4vh;
+
+    display: flex;
+    justify-content:center;
+}
+
+.contactButtons{
+    padding-left: 18vw;
+    padding-right: 18vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 22px;
+    color: #313030;
+
+}
+
+.contactButtonItem{
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 22px;
+    width: 20vw;
+    height: 8.5vh;
+
+    background: #B3CEDC 0% 0% no-repeat padding-box;
+    box-shadow: -8px -8px 18px #FFFFFFAD;
+    border-radius: 23px;
+    
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: $link-color;
+}
+
+.contactText{
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    padding-top: 2.5vh;
+
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+
