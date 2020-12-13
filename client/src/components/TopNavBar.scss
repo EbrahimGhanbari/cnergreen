@@ -1,35 +1,29 @@
-@import '../styles/variables.scss';
+@import "../styles/variables.scss";
 
-
-.topButton{
-    color: $base-color;
-    font-family: $title-font;
-    font-weight: 300;
-    font-size: 22px;
-    margin: 2vw;
-    color: $font-color;
-    text-decoration: none;
-    
-  }
-.topButtonGroup{
-    padding-top: 45px;
-    padding-right: 108px;
+.topButton {
+  color: $base-color;
+  font-family: $title-font;
+  font-weight: 300;
+  font-size: 22px;
+  margin: 2vw;
+  color: $font-color;
+  text-decoration: none;
+}
+.topButtonGroup {
+  padding-top: 45px;
+  padding-right: 108px;
 }
 .topNav {
-    display: flex;
-    justify-content: space-between;
-  }
-
-#logo {
-    width: 179px;
-    height: 182px;
-    padding-top: 19px;
-    padding-left: 21px;
-
+  display: flex;
+  justify-content: space-between;
 }
 
-
-
+#logo {
+  width: 179px;
+  height: 182px;
+  padding-top: 19px;
+  padding-left: 21px;
+}
 
 // .titleMain{
 //     width: 40vw;
@@ -53,12 +47,10 @@
 //     font-weight: 400;
 //     font-size: 22px;
 
-
-    
 // }
 
 // .learnMoreButton{
-    
+
 //     margin-left: 6vw;
 //     border-radius: 20px;
 //     font-family: $title-font;
@@ -70,7 +62,6 @@
 //     color: white;
 //     background-color: black;
 
-
 // }
 // #learnMoreIcon{
 //     padding-left: 2vw;
@@ -78,5 +69,5 @@
 // }
 
 // .learnMoreButton:hover{
-//     background-color: rgb(29, 29, 29); 
+//     background-color: rgb(29, 29, 29);
 // }
