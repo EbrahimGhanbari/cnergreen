@@ -1,15 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
-// fonts 
-$title-font: 'Lato', sans-serif;
-
+// fonts
+$title-font: "Lato", sans-serif;
 
 $base-color: #979797;
 
-$base-color-transparent:transparent linear-gradient(180deg, #FFFFFF 0%, #9EC1D2 100%) 0% 0% no-repeat padding-box;
+$base-color-transparent: transparent
+  linear-gradient(180deg, #ffffff 0%, #9ec1d2 100%) 0% 0% no-repeat padding-box;
 
-$button-background-transparent: transparent linear-gradient(90deg, #398DF9 0%, #53ABCA 48%, #4AB26E 100%) 0% 0% no-repeat padding-box;
+$button-background-transparent: transparent
+  linear-gradient(90deg, #398df9 0%, #53abca 48%, #4ab26e 100%) 0% 0% no-repeat
+  padding-box;
+
+$line-gradient-blue: linear-gradient(
+  174deg,
+  rgba(41, 37, 86, 1) 0%,
+  rgba(18, 73, 120, 1) 25%,
+  rgba(3, 136, 188, 1) 50%,
+  rgba(125, 200, 234, 1) 75%,
+  rgba(225, 244, 251, 1) 100%
+);
+$line-green: #65aa33;
 
 $font-color: #313030;
 $link-color: #313030;
-
+$logo-color: #018ecd;
+$grey-color: #dad9d6;

@@ -1,23 +1,23 @@
 import React from "react";
 import "./SectionGrid.scss";
 
-function SectionOne({ gridInput }) {
+function SectionGrid({ gridInput }) {
   return (
     <div className="gridContainer">
       <div>
-        <img className="imgGrid" src="rig.png" alt="Italian Trulli" />
+        <img className="imgGrid" src={gridInput.e1[1]} alt="Italian Trulli" />
         <div className="gridItemText"> {gridInput.e1[0]}</div>
       </div>
       <div>
-        <img className="imgGrid" src="foam.png" alt="Italian Trulli" />
+        <img className="imgGrid" src={gridInput.e2[1]} alt="Italian Trulli" />
         <div className="gridItemText">{gridInput.e2[0]}</div>
       </div>
       <div>
-        <img className="imgGrid" src="stat.png" alt="Italian Trulli" />
+        <img className="imgGrid" src={gridInput.e3[1]} alt="Italian Trulli" />
         <div className="gridItemText">{gridInput.e3[0]}</div>
       </div>
     </div>
   );
 }
 
-export default SectionOne;
+export default SectionGrid;

@@ -1,57 +1,83 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
-.topSection{
-    height: 100vh;
-    background: $base-color-transparent;
-}
+.topSection {
+  height: 100vh;
 
-.topText{
+  .line_button {
     display: flex;
-    flex-direction: column;
-}
-.titleMain{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 18.5vw;
+    padding-right: 7vw;
+  }
+
+  #left_line {
     width: 40vw;
-    font-family: $title-font;
-    font-weight: 700;
-    font-size: 54px;
-    padding-left: 18.5vw;
-    padding-top: 5vh;
+  }
+  #right_line {
+    width: 5vw;
+  }
 }
 
-.txtAndButton{
-    padding-top: 6vh;
-    display: flex;
-    padding-left: 18.5vw;
-    padding-right: 18.5vw;
-
+.line {
+  background: $grey-color;
+  height: 3px;
 }
-.textAfterTitle{
-    font-family: $title-font;
-    width: 42vw;
-    font-weight: 400;
-    font-size: 22px;
+.topText {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5vh;
 }
-
-.learnMoreButton{
-    
-    margin-left: 6vw;
-    border-radius: 20px;
-    font-family: $title-font;
-    font-weight: 700;
-    font-size: 23px;
-    width: 19vw;
-    height: 10vh;
-
-    color: white;
-    background-color: black;
-
-
-}
-#learnMoreIcon{
-    padding-left: 2vw;
-    font-size: 23px;
+.titleMain {
+  width: 40vw;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 54px;
+  padding-left: 18.5vw;
+  padding-top: 5vh;
 }
 
-.learnMoreButton:hover{
-    background-color: rgb(29, 29, 29); 
+.textAfterTitle {
+  padding-left: 18.5vw;
+  padding-right: 18.5vw;
+  font-family: $title-font;
+  width: 42vw;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.learnMoreButton {
+  border-radius: 50px;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 23px;
+  width: 19vw;
+  height: 8vh;
+
+  border: none;
+  color: white;
+  background-color: $logo-color;
+}
+#learnMoreIcon {
+  padding-left: 2vw;
+  font-size: 23px;
+}
+
+.learnMoreButton:hover {
+  background-color: rgb(29, 29, 29);
+}
+
+#main_figure {
+  width: 100%;
+}
+
+.green_line {
+  background: $line-green;
+  height: 2vh;
+}
+
+.blue_line {
+  background: $line-gradient-blue;
+  height: 6vh;
 }
