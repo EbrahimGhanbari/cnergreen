@@ -11,7 +11,7 @@ function Contact(props) {
         <img id="logo" src="cnergreenlogo.png" alt="Italian Trulli" />
       </div>
       <div className="topButtonGroup">
-        <Link className="topButton" to="/home">
+        <Link className="topButton" to="/">
           Home
         </Link>
         <Link className="topButton" to="/solution">
