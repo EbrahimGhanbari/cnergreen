@@ -1,26 +1,62 @@
 @import "../styles/variables.scss";
 
-.topButton {
-  color: $base-color;
-  font-family: $title-font;
-  font-weight: 300;
-  font-size: 22px;
-  margin: 2vw;
-  color: $font-color;
-  text-decoration: none;
-}
-.topButtonGroup {
-  padding-top: 6vh;
-  padding-right: 5vw;
-}
 .topNav {
   display: flex;
   justify-content: space-between;
   padding-bottom: 5vh;
-}
 
-#logo {
-  width: 20vw;
-  padding-top: 6vh;
-  padding-left: 5vw;
+  #logo {
+    width: 20vw;
+    padding-top: 5vh;
+    padding-left: 5vw;
+  }
+  .topButton {
+    font-family: $title-font;
+    font-weight: 300;
+    font-size: 22px;
+    margin: 2vw;
+    color: #949392;
+    text-decoration: none;
+  }
+  .topButtonGroup {
+    padding-top: 5vh;
+    padding-right: 5vw;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all 0.5s;
+  }
+
+  nav ul li a:hover {
+    color: black;
+  }
+
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: $line-gradient-blue;
+    height: 3px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
 }
