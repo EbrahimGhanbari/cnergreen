@@ -7,7 +7,7 @@ function BlogGridContent(props) {
     <div className="blog_box_content">
       <p className="blog_box_text">{props.title}</p>
       <a className="blog_box_learn" href={props.url}>
-        Learn More >
+        Learn More {">"}
       </a>
     </div>
   );
