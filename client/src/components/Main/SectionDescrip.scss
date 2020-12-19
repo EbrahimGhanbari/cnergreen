@@ -1,21 +1,45 @@
 @import "../../styles/variables.scss";
 
-.gridContainer {
-  padding-top: 16vh;
-  padding-bottom: 16vh;
-  padding-left: 7vw;
-  padding-right: 7vw;
-
+.left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-.gridItemText {
+.right {
   display: flex;
-  justify-content: center;
-  padding-top: 3.4vh;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 
-  font-family: $title-font;
-  font-weight: 400;
+.descripContainer {
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-bottom: 16vh;
+
+  .descripTextContainer {
+    padding-top: 4vh;
+    padding-bottom: 12vh;
+    width: 40vw;
+    font-family: $title-font;
+
+    .descripTextContainerTitle {
+      font-weight: 700;
+      font-size: 35px;
+      padding-bottom: 10vh;
+    }
+    ul li {
+      font-size: larger;
+      padding-bottom: 1.5vh;
+    }
+  }
+
+  .learnMoreButtonDiv {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .descripImg {
+    width: 35vw;
+  }
 }

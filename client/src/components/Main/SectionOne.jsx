@@ -14,7 +14,7 @@ function SectionOne() {
         <div className="line_button">
           <div className="line" id="left_line"></div>
           <button className="learnMoreButton">
-            Learn More <FaRegHandPointRight id="learnMoreIcon" />
+            Contact <FaRegHandPointRight id="learnMoreIcon" />
           </button>
           <div className="line" id="right_line"></div>
         </div>
@@ -27,8 +27,8 @@ function SectionOne() {
       <div>
         <img id="main_figure" src="main_figure.png" />
       </div>
-      <hr className="green_line"/>
-      <hr className="blue_line"/>
+      <hr className="green_line" />
+      <hr className="blue_line" />
     </div>
   );
 }

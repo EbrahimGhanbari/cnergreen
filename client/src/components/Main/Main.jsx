@@ -9,34 +9,29 @@ import TopNavBar from "../TopNavBar";
 // import DemoPlotly from "./DemoPlotly";
 
 function Main(props) {
-  // this is the grid input for different sections
   const gridInputTop = {
     e1: ["Enhance Oil Recovery", "rig.png"],
     e2: ["Optimize Production", "foam.png"],
     e3: ["Request Demo", "stat.png"],
   };
 
-  const gridInputButtom = {
-    e1: ["Analytics"],
-    e2: ["About Us"],
-    e3: ["Contact Us"],
-  };
-
   const content = {
     e1: {
-      img: "",
+      img: "foam_product.png",
       text: [
-        "Lorem Ipsum is simply dummy text of the printing",
-        "Lorem Ipsum is simply dummy text of the printing",
-        "Lorem Ipsum is simply dummy text of the printing",
+        "CNERFOAM",
+        "Innovative nanoparticle-based stable viscous foam and injection technology",
+        "Access un-swept reservoir increasing oil recovery and CO2 storage",
+        "Maintains pressure in parent well avoiding fracture driven interactions, well damage, and production loss",
       ],
     },
     e2: {
-      img: "",
+      img: "dollar.png",
       text: [
-        "sec 2 Lorem Ipsum is simply dummy text of the printing",
-        "sec 2 Lorem Ipsum is simply dummy text of the printing",
-        "sec 2 Lorem Ipsum is simply dummy text of the printing",
+        "Why Cnergreen?",
+        "Customized to reservoir specific properties to ensure stability",
+        "Stable at reservoir conditions (temperature, salinity, crude oil) and can be collapsed on demand",
+        "Made with commercially available components and any gas type (CO2, N2, natural gas, steam)",
       ],
     },
   };
@@ -48,7 +43,7 @@ function Main(props) {
       <SectionGrid gridInput={gridInputTop} />
       <SectionDescrip direction={"left"} content={content.e1} />
       <SectionDescrip direction={"right"} content={content.e2} />
-      <SectionGrid gridInput={gridInputButtom} />
+      {/* <SectionGrid gridInput={gridInputButtom} /> */}
       {/* <DemoPlotly /> */}
     </div>
   );
