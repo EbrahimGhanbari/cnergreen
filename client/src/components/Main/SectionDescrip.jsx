@@ -15,7 +15,7 @@ function SectionDescrip({ content, direction }) {
           </ul>
         </div>
         <div className="learnMoreButtonDiv">
-          <button className="learnMoreButton">
+          <button className="button1">
             Learn More <FaRegHandPointRight id="learnMoreIcon" />
           </button>
         </div>

@@ -47,7 +47,7 @@
   font-size: 22px;
 }
 
-.learnMoreButton {
+.button1 {
   border-radius: 50px;
   font-family: $title-font;
   font-weight: 700;
@@ -59,12 +59,15 @@
   color: white;
   background-color: $logo-color;
 }
+#contact_button {
+  color: white;
+}
 #learnMoreIcon {
   padding-left: 2vw;
   font-size: 23px;
 }
 
-.learnMoreButton:hover {
+.button1:hover {
   background-color: rgb(29, 29, 29);
 }
 

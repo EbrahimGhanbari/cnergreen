@@ -13,8 +13,10 @@ function SectionOne() {
 
         <div className="line_button">
           <div className="line" id="left_line"></div>
-          <button className="learnMoreButton">
-            Contact <FaRegHandPointRight id="learnMoreIcon" />
+          <button className="button1">
+            <a id="contact_button" href="/contact">
+              Contact
+            </a>
           </button>
           <div className="line" id="right_line"></div>
         </div>
