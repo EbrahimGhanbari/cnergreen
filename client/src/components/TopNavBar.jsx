@@ -1,6 +1,7 @@
 import React from "react";
-
 import "./TopNavBar.scss";
+
+import Dropdown from "./Animation/Dropdown";
 
 function Contact(props) {
   return (
@@ -16,9 +17,9 @@ function Contact(props) {
             </a>
           </li>
           <li>
-            <a className="topButton" href="/solution">
-              Solution
-            </a>
+            {/* <a className="topButton" href="/team"> */}
+            <Dropdown />
+            {/* </a> */}
           </li>
           <li>
             <a className="topButton" href="/team">
