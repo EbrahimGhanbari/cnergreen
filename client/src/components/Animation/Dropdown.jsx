@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./Dropdown.scss";
-import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropdown, IoMdCheckmark } from "react-icons/io";
+// import { IoMdCheckmark } from "react-icons/cg";
 
 const options = [
-  ["> Enhance Oil Recovery", "/solution"],
-  ["> Optimize Production", "/solution"],
+  [" Enhance Oil Recovery", "/solution"],
+  [" Optimize Production", "/solution"],
 ];
 
 function Dropdown() {
@@ -37,6 +38,7 @@ function Dropdown() {
         {options.map((option) => (
           <li>
             <a href={option[1]} key={Math.random()}>
+              <IoMdCheckmark />
               {option[0]}
             </a>
           </li>
