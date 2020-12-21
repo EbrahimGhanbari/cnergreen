@@ -11,6 +11,7 @@
     padding-left: 5vw;
   }
   .topButton {
+    position: relative;
     font-family: $title-font;
     font-weight: 300;
     font-size: 22px;
@@ -20,6 +21,7 @@
   }
 
   .topButtonGroup {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-top: 5vh;

@@ -1,20 +1,38 @@
 @import "../../styles/variables.scss";
+.hiddenDropdown {
+  display: none;
+}
+
+.showDropdown {
+  display: block;
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 1vw;
+  text-align: left;
+  background-color: rgb(241, 247, 248);
+  padding: 10px;
+  border-radius: 25px;
+}
 
 .dropdown_container {
-  ul {
-    display: flex;
-    flex-direction: column;
+  //   position: absolute;
+  //   margin-left: 2vw;
+  //   margin-top: 1vw;
+  //   text-align: left;
+  //   background-color: #dfeaed;
+  //   padding: 10px;
+  //   border-radius: 25px;
+
+  li {
+    padding-top: 2vh;
+  }
+  a {
     padding: 0;
-    // margin: 0;
-    // // padding-left: 1em;
-    // background: #ffffff;
-    // border: 2px solid #e5e5e5;
-    // box-sizing: border-box;
-    // font-size: 1.3rem;
-    // font-weight: 500;
-    &:first-child {
-      padding-top: 0.8em;
-    }
+    font-family: $title-font;
+    font-weight: 300;
+    font-size: 22px;
+    color: #949392;
+    text-decoration: none;
   }
 
   li {
