@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./Footer.scss";
 
@@ -46,7 +47,10 @@ export default function Footer(props) {
             </div>
           </div>
           <hr id="btm_line" />
-          <p> {year} All Rights Reserved</p>
+          <div id="txt_footer">
+            <p> {year} All Rights Reserved</p>
+            <p> CNERGREEN</p>
+          </div>
         </section>
       </div>
     </div>
