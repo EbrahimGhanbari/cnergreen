@@ -22,20 +22,17 @@
 }
 
 .imgGrid {
-  width: 18vw;
-
   -webkit-transition: -webkit-transform 0.9s ease-in-out;
   transition: transform 0.9s ease-in-out;
 }
 
-.gridContainerItems:hover .imgGrid {
+.gridContainerItems:hover .right_turn {
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
-
-  // border-radius: 30%;
-  // -webkit-box-shadow: 4px 1px 13px 4px rgba(102, 185, 237, 1);
-  // -moz-box-shadow: 4px 1px 13px 4px rgba(102, 185, 237, 1);
-  // box-shadow: 4px 1px 13px 4px rgba(102, 185, 237, 1);
+}
+.gridContainerItems:hover .left_turn {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(-30deg);
 }
 .gridContainerItems:hover .gridItemText {
   text-shadow: rgb(94, 191, 255) 1px 0 10px;

@@ -14,7 +14,7 @@ export default function Footer(props) {
   const year = date.getFullYear();
 
   return (
-    <div>
+    <div className="footer_main">
       <hr className="green_line" id="green_line_footer" />
       <hr className="blue_line" id="blue_line_footer" />
       <div>

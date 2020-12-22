@@ -1,11 +1,11 @@
 import React from "react";
 import TopNavBar from "../TopNavBar";
+import Footer from "../Footer";
 import TeamMember from "./TeamMember";
 
 import "./Team.scss";
 
 function Team(props) {
-
   const teamMembers = [
     {
       name: "Ali Telmadarreie",
@@ -40,10 +40,11 @@ function Team(props) {
     <div>
       <TopNavBar />
       <div className="team_container">
-        {teamMembers.map((member) => 
+        {teamMembers.map((member) => (
           <TeamMember member={member} />
-        )}
+        ))}
       </div>
+      <Footer />
     </div>
   );
 }

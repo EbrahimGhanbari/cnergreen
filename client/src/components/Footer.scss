@@ -1,5 +1,7 @@
 @import "../styles/variables.scss";
-
+.footer_main {
+  padding-top: 25vh;
+}
 #green_line_footer {
   height: 4vh;
 }
@@ -9,18 +11,12 @@
 #footer_section {
   background-color: #d6d6d6;
 
-  padding-bottom: 3vw;
-
   #btm_line {
     width: 80vw;
   }
 }
 .footer {
-  padding-top: 6vw;
-  padding-bottom: 3vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
-
+  padding: 4vh 10vw 2vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +51,6 @@
     padding: 2.5vw;
     filter: grayscale(100%);
     opacity: 0.6;
-    // filter: brightness(0.1);
   }
   a img:hover {
     filter: grayscale(0%);
