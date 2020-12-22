@@ -27,6 +27,7 @@ function Main(props) {
 
   const content = {
     e1: {
+      link: "/",
       img: "foam_product.png",
       text: [
         "CNERFOAM",
@@ -36,6 +37,7 @@ function Main(props) {
       ],
     },
     e2: {
+      link: "/",
       img: "dollar.png",
       text: [
         "Why Cnergreen?",

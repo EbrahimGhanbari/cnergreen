@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SectionDescrip.scss";
 import { FaRegHandPointRight } from "react-icons/fa";
 
+const pictureWidth = 35;
+const pictureWidthStyle = { width: `${pictureWidth}vw` };
+
 function SectionDescrip({ content, direction }) {
+  const [coordinates, setCoordinates] = useState({ x: -1 });
+  const [turn, setTurn] = useState("descripImg ");
+
+  const screenWidth = window.innerWidth;
+
+  const onMouse = (e) => {
+    setCoordinates({
+      x: e.nativeEvent.offsetX / screenWidth / pictureWidth / 0.01,
+    });
+
+    if (coordinates.x >= 0.5) {
+      setTurn("descripImg right_turn");
+    } else {
+      setTurn("descripImg left_turn");
+    }
+  };
+
   return (
     <div className={`descripContainer ${direction}`}>
       <div className="descripTextContainer">
@@ -14,15 +34,21 @@ function SectionDescrip({ content, direction }) {
             <li>{content.text[3]}</li>
           </ul>
         </div>
-        <div className="learnMoreButtonDiv">
+        <a className="learnMoreButtonDiv" href={content.link}>
           <button className="button1">
             Learn More <FaRegHandPointRight id="learnMoreIcon" />
           </button>
-        </div>
+        </a>
       </div>
-      <div>
-        <img src={content.img} className="descripImg" alt="Italian Trulli" />
-      </div>
+      <a href={content.link}>
+        <img
+          src={content.img}
+          onMouseMove={onMouse}
+          className={turn}
+          style={pictureWidthStyle}
+          alt="Italian Trulli"
+        />
+      </a>
     </div>
   );
 }

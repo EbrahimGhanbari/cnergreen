@@ -40,6 +40,16 @@
   }
 
   .descripImg {
-    width: 35vw;
+    -webkit-transition: -webkit-transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out;
+  }
+  .right_turn:hover {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  .left_turn:hover {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(-15deg);
   }
 }

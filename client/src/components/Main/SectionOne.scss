@@ -55,15 +55,17 @@
   font-size: 23px;
   width: 19vw;
   height: 8vh;
-
   border: none;
   color: white;
   background-color: $logo-color;
 }
+.button1:focus {
+  outline: none;
+}
 #contact_button {
   color: white;
 }
-#learnMoreIcon {
+.learnMoreIcon {
   padding-left: 2vw;
   font-size: 23px;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./SectionGrid.scss";
 
 const pictureWidth = 18;
@@ -7,23 +7,20 @@ const pictureWidthStyle = { width: `${pictureWidth}vw` };
 function SectionGrid({ gridInput }) {
   const [coordinates, setCoordinates] = useState({ x: -1 });
   const [turn, setTurn] = useState("imgGrid ");
+
   const screenWidth = window.innerWidth;
+
   const onMouse = (e) => {
     setCoordinates({
       x: e.nativeEvent.offsetX / screenWidth / pictureWidth / 0.01,
     });
+
     if (coordinates.x >= 0.5) {
       setTurn("imgGrid right_turn");
     } else {
       setTurn("imgGrid left_turn");
     }
-    console.log(turn);
   };
-  // const onMouseLeavePic = () => {
-  //   // setCoordinates({
-  //   //   x: -1,
-  //   // });
-  // };
 
   return (
     <div className="gridContainer">
