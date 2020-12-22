@@ -6,6 +6,7 @@ import SectionGrid from "./SectionGrid";
 import SectionDescrip from "./SectionDescrip";
 import Collaborators from "./Collaborators";
 import TopNavBar from "../TopNavBar";
+import Footer from "../Footer";
 
 // import DemoPlotly from "./DemoPlotly";
 
@@ -45,6 +46,7 @@ function Main(props) {
       <SectionDescrip direction={"left"} content={content.e1} />
       <SectionDescrip direction={"right"} content={content.e2} />
       <Collaborators gridInput={[]} />
+      <Footer />
       {/* <SectionGrid gridInput={gridInputButtom} /> */}
       {/* <DemoPlotly /> */}
     </div>

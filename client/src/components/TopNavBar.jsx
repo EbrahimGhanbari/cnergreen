@@ -3,7 +3,7 @@ import "./TopNavBar.scss";
 
 import Dropdown from "./Animation/Dropdown";
 
-function Contact(props) {
+function TopNavBar(props) {
   return (
     <section className="topNav">
       <div>
@@ -38,4 +38,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default TopNavBar;
