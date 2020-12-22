@@ -11,6 +11,14 @@ import Footer from "../Footer";
 // import DemoPlotly from "./DemoPlotly";
 
 function Main(props) {
+  const collaborators = [
+    [
+      "collaborator_1.png",
+      "https://research.ucalgary.ca/energy/energy-research/canada-excellence-research-chair",
+    ],
+    ["collaborator_2.png", "https://www.alberta.ca/greenstem.aspx"],
+    ["collaborator_3.png", "https://innovatecalgary.com/"],
+  ];
   const gridInputTop = {
     e1: ["Enhance Oil Recovery", "rig.png"],
     e2: ["Optimize Production", "foam.png"],
@@ -45,7 +53,7 @@ function Main(props) {
       <SectionGrid gridInput={gridInputTop} />
       <SectionDescrip direction={"left"} content={content.e1} />
       <SectionDescrip direction={"right"} content={content.e2} />
-      <Collaborators gridInput={[]} />
+      <Collaborators gridInput={collaborators} />
       <Footer />
       {/* <SectionGrid gridInput={gridInputButtom} /> */}
       {/* <DemoPlotly /> */}

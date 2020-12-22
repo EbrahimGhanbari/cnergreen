@@ -1,1 +1,21 @@
 @import "../../styles/variables.scss";
+
+.collaborators {
+  hr {
+    width: 70vw;
+    background-color: #9d9d9c;
+  }
+
+  padding: 5vh 17vw 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  a {
+    padding: 2vw;
+  }
+  a img {
+    // width: 10vw;
+    height: 20vh;
+  }
+}
