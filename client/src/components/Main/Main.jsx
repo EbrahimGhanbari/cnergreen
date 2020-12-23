@@ -8,6 +8,10 @@ import Collaborators from "./Collaborators";
 import TopNavBar from "../TopNavBar";
 import Footer from "../Footer";
 
+//Animations
+import Trail from "../Animation/Trail";
+import TrailText from "../Animation/TrailText";
+
 // import DemoPlotly from "./DemoPlotly";
 
 function Main(props) {
@@ -50,13 +54,18 @@ function Main(props) {
 
   return (
     <div>
-      <TopNavBar />
-      <SectionOne />
+      {/* <Trail open={true} xValue={-500}>
+        <TopNavBar />
+      </Trail>
+      <Trail open={true} xValue={500}>
+        <SectionOne />
+      </Trail> */}
       <SectionGrid gridInput={gridInputTop} />
-      <SectionDescrip direction={"left"} content={content.e1} />
+      {/*<SectionDescrip direction={"left"} content={content.e1} />
       <SectionDescrip direction={"right"} content={content.e2} />
-      <Collaborators gridInput={collaborators} />
-      <Footer />
+      <Collaborators gridInput={collaborators} /> */}
+      {/* <Footer /> */}
+
       {/* <SectionGrid gridInput={gridInputButtom} /> */}
       {/* <DemoPlotly /> */}
     </div>
