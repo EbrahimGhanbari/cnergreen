@@ -11,24 +11,24 @@ import './index.css';
 import Main from './components/Main/Main'
 import Contact from './components/Contact/Contact';
 import Blog from './components/Blog/Blog';
-import Solution from './components/Solution/Solution';
 import Team from './components/Team/Team';
 import RequestInfo from './components/Contact/RequestInfo';
 import Questionnaire from './components/Contact/Questionnaire';
-
-
+import EnhanceOilRecovery from './components/Solution/EnhanceOilRecovery/EnhanceOilRecovery';
+import FractureDrivenInteraction from './components/Solution/FractureDrivenInteraction/FractureDrivenInteraction';
 
 const routing = (
     <div>
         <Router>
             <Switch>
                 <Route exact path="/" component={Main} />
-                <Route path="/solution" component={Solution} />
                 <Route path="/blog" component={Blog} />
                 <Route path="/team" component={Team} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/requestInfo" component={RequestInfo} />
                 <Route path="/questionnaire" component={Questionnaire} />
+                <Route path="/enhance_oil_recovery" component={EnhanceOilRecovery} />
+                <Route path="/fracture_driven_interaction" component={FractureDrivenInteraction} />
 
             </Switch>
         </Router>
