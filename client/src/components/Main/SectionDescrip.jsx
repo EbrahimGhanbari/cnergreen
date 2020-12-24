@@ -6,7 +6,8 @@ import Trail from "../Animation/Trail";
 const pictureWidth = 35;
 const pictureWidthStyle = { width: `${pictureWidth}vw` };
 
-function SectionDescrip({ content, direction }) {
+function SectionDescrip({ content, direction, ...props }) {
+  console.log(props);
   const [coordinates, setCoordinates] = useState({ x: -1 });
   const [turn, setTurn] = useState("descripImg ");
 
@@ -30,7 +31,7 @@ function SectionDescrip({ content, direction }) {
   } else if (direction === "right") {
     animationDirection = [500, -500];
   }
-  console.log(animationDirection);
+  // console.log(animationDirection);
 
   return (
     <div className={`descripContainer ${direction}`}>

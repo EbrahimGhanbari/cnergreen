@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import { handleViewport } from "react-in-viewport";
+
 import "./Main.scss";
 
 import SectionOne from "./SectionOne";
 import SectionGrid from "./SectionGrid";
 import SectionDescrip from "./SectionDescrip";
 import Collaborators from "./Collaborators";
+import TextCenter from "./TextCenter";
+
 import TopNavBar from "../TopNavBar";
 import Footer from "../Footer";
+import Divider from "../Divider";
 
 //Animations
 import Trail from "../Animation/Trail";
@@ -51,23 +56,92 @@ function Main(props) {
     },
   };
 
+  const [sectionDisplay, setSectionDisplay] = useState({
+    sectionOne: true,
+    sectionTwo: true,
+    sectionThree: true,
+    sectionFour: true,
+    sectionSix: true,
+  });
+
+  const DividerView = handleViewport(Divider);
+
   return (
     <div>
-      {/* <Trail open={true} xValue={-500} direction={"vertical"}>
-        <TopNavBar />
-      </Trail>
-      <Trail open={true} xValue={500}>
-        <SectionOne />
-      </Trail> */}
-      {/* <Trail open={true} xValue={-500} direction={"horizontal"}>
-        <SectionGrid gridInput={gridInputTop} />
-      </Trail> */}
-      <SectionDescrip direction={"left"} content={content.e1} />
-      <SectionDescrip direction={"right"} content={content.e2} />
-      {/* <Trail open={true} xValue={-500} direction={"horizontal"}>
-        <Collaborators gridInput={collaborators} />
-      </Trail> */}
-      {/* <Footer /> */}
+      {sectionDisplay.sectionOne && (
+        <div id="section_One">
+          <Trail open={true} xValue={-500} direction={"vertical"}>
+            <TopNavBar />
+          </Trail>
+          <Trail open={true} xValue={500}>
+            <SectionOne />
+          </Trail>
+        </div>
+      )}
+
+      <Divider height={"60vh"}></Divider>
+
+      {sectionDisplay.sectionTwo && (
+        <div id="sectionTwo">
+          <TextCenter />
+          <Trail open={true} xValue={-500} direction={"horizontal"}>
+            <SectionGrid gridInput={gridInputTop} />
+          </Trail>
+        </div>
+      )}
+      <DividerView
+        height={"0.1vh"}
+        onEnterViewport={() => {
+          setSectionDisplay({ ...sectionDisplay, sectionTwo: true });
+        }}
+      />
+
+      <Divider height={"60vh"}></Divider>
+      <DividerView
+        height={"0.1vh"}
+        onEnterViewport={() => {
+          setSectionDisplay({ ...sectionDisplay, sectionThree: true });
+        }}
+      />
+
+      {sectionDisplay.sectionThree && (
+        <SectionDescrip
+          onEnterViewport={() => console.log("enter")}
+          direction={"left"}
+          content={content.e1}
+        />
+      )}
+
+      <Divider height={"60vh"}></Divider>
+
+      <DividerView
+        height={"0.1vh"}
+        onEnterViewport={() => {
+          setSectionDisplay({ ...sectionDisplay, sectionFour: true });
+        }}
+      />
+
+      {sectionDisplay.sectionFour && (
+        <SectionDescrip
+          onEnterViewport={() => console.log("enter")}
+          direction={"right"}
+          content={content.e2}
+        />
+      )}
+
+      <Divider height={"60vh"}></Divider>
+      {sectionDisplay.sectionFive && (
+        <Trail open={true} xValue={-500} direction={"horizontal"}>
+          <Collaborators gridInput={collaborators} />
+        </Trail>
+      )}
+      <DividerView
+        height={"0.1vh"}
+        onEnterViewport={() => {
+          setSectionDisplay({ ...sectionDisplay, sectionFive: true });
+        }}
+      />
+      {<Footer />}
 
       {/* <DemoPlotly /> */}
     </div>
