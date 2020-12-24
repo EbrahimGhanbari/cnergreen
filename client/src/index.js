@@ -16,6 +16,8 @@ import RequestInfo from './components/Contact/RequestInfo';
 import Questionnaire from './components/Contact/Questionnaire';
 import EnhanceOilRecovery from './components/Solution/EnhanceOilRecovery/EnhanceOilRecovery';
 import FractureDrivenInteraction from './components/Solution/FractureDrivenInteraction/FractureDrivenInteraction';
+import CnerFoam from './components/CnerFoam/CnerFoam';
+import WhyCnergreen from './components/WhyCnergreen/WhyCnergreen';
 
 const routing = (
     <div>
@@ -29,7 +31,8 @@ const routing = (
                 <Route path="/questionnaire" component={Questionnaire} />
                 <Route path="/enhance_oil_recovery" component={EnhanceOilRecovery} />
                 <Route path="/fracture_driven_interaction" component={FractureDrivenInteraction} />
-
+                <Route path="/cnerfoam" component={CnerFoam} />
+                <Route path="/why_cnergreen" component={WhyCnergreen} />
             </Switch>
         </Router>
     </div>

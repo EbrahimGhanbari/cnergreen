@@ -49,7 +49,7 @@ export default function Footer(props) {
           <hr id="btm_line" />
           <div id="txt_footer">
             <p> {year} All Rights Reserved</p>
-            <p> CNERGREEN</p>
+            <p> 3655 36 St NW, Calgary, AB T2L 1Y8</p>
           </div>
         </section>
       </div>
