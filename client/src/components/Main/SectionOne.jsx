@@ -1,8 +1,6 @@
 import React from "react";
 import "./SectionOne.scss";
 
-import { FaRegHandPointRight } from "react-icons/fa";
-
 function SectionOne() {
   return (
     <div className="topSection">
@@ -22,8 +20,7 @@ function SectionOne() {
         </div>
 
         <div className="textAfterTitle">
-          Innovative Nano-particle Based Stable Viscous Foam and Injection
-          Technology
+          Putting Carbon where it's meant to be!
         </div>
       </div>
       <div>

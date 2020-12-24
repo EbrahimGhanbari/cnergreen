@@ -26,10 +26,14 @@ function Main(props) {
     ],
     ["collaborator_2.png", "https://www.alberta.ca/greenstem.aspx"],
     ["collaborator_3.png", "https://innovatecalgary.com/"],
+    [
+      "collaborator_4.png",
+      "https://www.eco.ca/employment-programs/youth-placement/natural-resources/",
+    ],
   ];
   const gridInputTop = {
     e1: ["Enhance Oil Recovery", "rig.png"],
-    e2: ["Optimize Production", "foam.png"],
+    e2: ["Fracture Driven Interaction", "foam.png"],
     e3: ["Request Demo", "stat.png"],
   };
 
@@ -38,7 +42,7 @@ function Main(props) {
       link: "/",
       img: "foam_product.png",
       text: [
-        "CNERFOAM",
+        "CNERFOAM®",
         "Innovative nanoparticle-based stable viscous foam and injection technology",
         "Access un-swept reservoir increasing oil recovery and CO2 storage",
         "Maintains pressure in parent well avoiding fracture driven interactions, well damage, and production loss",
@@ -49,8 +53,8 @@ function Main(props) {
       img: "dollar.png",
       text: [
         "Why Cnergreen?",
-        "Customized to reservoir specific properties to ensure stability",
-        "Stable at reservoir conditions (temperature, salinity, crude oil) and can be collapsed on demand",
+        "A unique team with more than 120 years of industry and management experience to deliver innovative solutions",
+        "Customized products to reservoir specific and application specific properties to ensure stability",
         "Made with commercially available components and any gas type (CO2, N2, natural gas, steam)",
       ],
     },
@@ -58,10 +62,10 @@ function Main(props) {
 
   const [sectionDisplay, setSectionDisplay] = useState({
     sectionOne: true,
-    sectionTwo: true,
-    sectionThree: true,
-    sectionFour: true,
-    sectionSix: true,
+    sectionTwo: false,
+    sectionThree: false,
+    sectionFour: false,
+    sectionSix: false,
   });
 
   const DividerView = handleViewport(Divider);
@@ -83,19 +87,21 @@ function Main(props) {
 
       {sectionDisplay.sectionTwo && (
         <div id="sectionTwo">
-          <TextCenter />
-          <Trail open={true} xValue={-500} direction={"horizontal"}>
+          <Trail open={true} xValue={0} direction={"horizontal"}>
+            <TextCenter />
+          </Trail>
+          <Trail open={true} xValue={-0} direction={"horizontal"}>
             <SectionGrid gridInput={gridInputTop} />
           </Trail>
         </div>
       )}
+
       <DividerView
         height={"0.1vh"}
         onEnterViewport={() => {
           setSectionDisplay({ ...sectionDisplay, sectionTwo: true });
         }}
       />
-
       <Divider height={"60vh"}></Divider>
       <DividerView
         height={"0.1vh"}
@@ -141,6 +147,7 @@ function Main(props) {
           setSectionDisplay({ ...sectionDisplay, sectionFive: true });
         }}
       />
+      <Divider height={"25vh"}></Divider>
       {<Footer />}
 
       {/* <DemoPlotly /> */}

@@ -1,8 +1,6 @@
 @import "../../styles/variables.scss";
 
 .topSection {
-  height: 100vh;
-
   .line_button {
     display: flex;
     flex-direction: row;
@@ -35,7 +33,6 @@
   font-weight: 700;
   font-size: 54px;
   padding-left: 18.5vw;
-  padding-top: 5vh;
 }
 
 .textAfterTitle {
