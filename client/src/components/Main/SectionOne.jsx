@@ -24,7 +24,7 @@ function SectionOne() {
         </div>
       </div>
       <div>
-        <img id="main_figure" src="main_figure.png" />
+        <img id="main_figure" src="main_figure.png" alt="main pic" />
       </div>
       <hr className="green_line" />
       <hr className="blue_line" />
