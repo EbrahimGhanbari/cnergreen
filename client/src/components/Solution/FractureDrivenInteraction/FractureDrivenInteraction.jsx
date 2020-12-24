@@ -1,9 +1,14 @@
 import React from "react";
 
+import TopNavbar from "../../TopNavBar";
+import Footer from "../../Footer";
+
 export default function FractureDrivenInteraction(props) {
   return (
     <div>
-      <h1>THIS sdsafdsfadsf Solution</h1>
+      <TopNavbar />
+
+      <Footer />
     </div>
   );
 }

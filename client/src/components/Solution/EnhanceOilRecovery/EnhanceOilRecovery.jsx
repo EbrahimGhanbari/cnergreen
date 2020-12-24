@@ -1,9 +1,12 @@
 import React from "react";
 
+import TopNavbar from "../../TopNavBar";
+import Footer from "../../Footer";
 export default function EnhanceOilRecovery(props) {
   return (
     <div>
-      <h1>XXXXXXXXXs</h1>
+      <TopNavbar />
+      <Footer />
     </div>
   );
 }
