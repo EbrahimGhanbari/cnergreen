@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import "./Dropdown.scss";
 import { IoMdArrowDropdown, IoMdCheckmark } from "react-icons/io";
-// import { IoMdCheckmark } from "react-icons/cg";
 
 const options = [
   [" Enhance Oil Recovery", "/enhance_oil_recovery"],

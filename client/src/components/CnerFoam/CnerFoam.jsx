@@ -4,6 +4,9 @@ import TopNavbar from "../TopNavBar";
 import Footer from "../Footer";
 import TextImage from "./TextImage";
 import Divider from "../Divider";
+
+import "./CnerFoam.scss";
+
 export default function CnerFoam(props) {
   const content = {
     e1: {
@@ -27,6 +30,16 @@ export default function CnerFoam(props) {
   return (
     <div>
       <TopNavbar />
+      <div className="cover">
+        <img src="cover_1.jpg" alt="main pic" />
+        <div>
+          CnerFoam
+          <p>
+            Innovative nanoparticle-based foam that can be designed with wide
+            ranges of commodity materials and gas type{" "}
+          </p>
+        </div>
+      </div>
       <TextImage
         onEnterViewport={() => console.log("enter")}
         direction={"left"}
