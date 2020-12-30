@@ -34,7 +34,7 @@ export default function TextImage({ content, direction }) {
         xValue={animationDirection[1]}
         direction={"horizontal"}
       >
-        <div>
+        <div className="img_sec">
           <img
             src={content.img}
             style={pictureWidthStyle}

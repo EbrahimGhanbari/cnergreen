@@ -20,4 +20,12 @@
       font-size: 1.2vw;
     }
   }
+
+  .img_sec {
+    img {
+      object-fit: cover;
+      width: 50vw;
+      height: 60vh;
+    }
+  }
 }

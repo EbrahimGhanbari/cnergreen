@@ -12,7 +12,7 @@ export default function CnerFoam(props) {
   const content = {
     e1: {
       link: "/cnerfoam",
-      img: "foam_product.png",
+      img: "cnerfoam_1.png",
       text: [
         "Highly stable and tunable",
         "CnerFoam can be tailored to specific applications and it remains stable in various conditions including in contact with crude oil (1 cp to + 10,000 cp), high salinity water (+200,000 ppm), and high temperature (+240 °C). CnerFoam viscosity and stability can be tuned on demand.",
@@ -20,7 +20,7 @@ export default function CnerFoam(props) {
     },
     e2: {
       link: "/why_cnergreen",
-      img: "dollar.png",
+      img: "cnerfoam_2.jpg",
       text: [
         "Platform technology, not a single product",
         "Not limited to a certain type of chemicals, nanoparticles, or gas type (N2, CO2, natural gas, butane, steam, the combination of gases). CnerFoam can be also designed with non-aqueous liquids i.e. waterless foam.",
