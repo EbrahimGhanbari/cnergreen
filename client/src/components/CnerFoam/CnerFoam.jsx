@@ -4,6 +4,7 @@ import TopNavbar from "../TopNavBar";
 import Footer from "../Footer";
 import TextImage from "./TextImage";
 import Divider from "../Divider";
+import Cover from "../Utilities/Cover";
 
 import "./CnerFoam.scss";
 
@@ -30,16 +31,14 @@ export default function CnerFoam(props) {
   return (
     <div>
       <TopNavbar />
-      <div className="cover">
-        <img src="cover_1.jpg" alt="main pic" />
-        <div>
-          CnerFoam
-          <p>
-            Innovative nanoparticle-based foam that can be designed with wide
-            ranges of commodity materials and gas type{" "}
-          </p>
-        </div>
-      </div>
+      <Cover
+        img={"cover_1.jpg"}
+        title={"CnerFoam"}
+        text={
+          "Innovative nanoparticle-based foam that can be designed with wide ranges of commodity materials and gas type"
+        }
+      />
+      <Divider height={"50vh"}></Divider>
       <TextImage
         onEnterViewport={() => console.log("enter")}
         direction={"left"}

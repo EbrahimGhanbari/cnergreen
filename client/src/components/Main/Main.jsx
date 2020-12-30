@@ -20,15 +20,16 @@ import DemoPlotly from "./DemoPlotly";
 
 function Main(props) {
   const collaborators = [
-    [
-      "collaborator_1.png",
-      "https://research.ucalgary.ca/energy/energy-research/canada-excellence-research-chair",
-    ],
+    ["collaborator_1.png", "https://www.ucalgary.ca/"],
     ["collaborator_2.png", "https://www.alberta.ca/greenstem.aspx"],
     ["collaborator_3.png", "https://innovatecalgary.com/"],
     [
       "collaborator_4.png",
       "https://www.eco.ca/employment-programs/youth-placement/natural-resources/",
+    ],
+    [
+      "collaborator_5.jpg",
+      "https://research.ucalgary.ca/energy/energy-research/canada-excellence-research-chair",
     ],
   ];
   const gridInputTop = {
