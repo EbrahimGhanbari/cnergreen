@@ -16,8 +16,6 @@ import Divider from "../Divider";
 //Animations
 import Trail from "../Animation/Trail";
 
-import DemoPlotly from "./DemoPlotly";
-
 function Main(props) {
   const collaborators = [
     ["collaborator_1.png", "https://www.ucalgary.ca/"],
@@ -150,8 +148,6 @@ function Main(props) {
       />
       <Divider height={"25vh"}></Divider>
       {<Footer />}
-
-      <DemoPlotly />
     </div>
   );
 }
