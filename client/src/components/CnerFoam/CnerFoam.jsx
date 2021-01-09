@@ -2,8 +2,8 @@ import React from "react";
 
 import TopNavbar from "../TopNavBar";
 import Footer from "../Footer";
-import TextImage from "./TextImage";
-import Divider from "../Divider";
+import TextImage from "../Utilities/TextImage";
+import Divider from "../Utilities/Divider";
 import Cover from "../Utilities/Cover";
 
 import "./CnerFoam.scss";

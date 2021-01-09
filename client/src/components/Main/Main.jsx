@@ -11,7 +11,7 @@ import TextCenter from "./TextCenter";
 
 import TopNavBar from "../TopNavBar";
 import Footer from "../Footer";
-import Divider from "../Divider";
+import Divider from "../Utilities/Divider";
 
 //Animations
 import Trail from "../Animation/Trail";
@@ -87,7 +87,13 @@ function Main(props) {
       {sectionDisplay.sectionTwo && (
         <div id="sectionTwo">
           <Trail open={true} xValue={0} direction={"horizontal"}>
-            <TextCenter />
+            <TextCenter
+              title={"CNERGREEN’s MISSION"}
+              content={`is to enable more responsible oil production
+              by increasing the efficiency of EOR through lower costs and accelerated
+              timelines, and promotes more sustainable EOR through a reduced
+              environmental impact of production and avoided emissions of CO₂.`}
+            />
           </Trail>
           <Trail open={true} xValue={-0} direction={"horizontal"}>
             <SectionGrid gridInput={gridInputTop} />

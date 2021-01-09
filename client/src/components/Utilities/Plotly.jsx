@@ -105,6 +105,7 @@ export default function Plotly(props) {
 
   layout.width = window.innerWidth < 1000 ? window.innerWidth : 840;
 
+  // eslint-disable-next-line array-callback-return
   props.data.plotData.map((plotData, index) => {
     data.push({
       showlegend: true,
