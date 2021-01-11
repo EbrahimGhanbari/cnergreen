@@ -1,5 +1,9 @@
 import React from "react";
-import Plot from "react-plotly.js";
+// import Plot from "react-plotly.js";
+// import Plot from "plotly.js-cartesian-dist";
+import PlotlyPackage from "plotly.js";
+import createPlotlyComponent from "react-plotly.js/factory";
+const Plot = createPlotlyComponent(PlotlyPackage);
 
 const config = {
   displaylogo: false,
@@ -17,16 +21,17 @@ const config = {
 };
 
 const plotColor = ["red", "green", "blue"];
-const data = [];
 
 export default function Plotly(props) {
+  const data = [];
   const layout = {
-    width: window.innerWidth < 1000 ? window.innerWidth : 840,
-    height: 700,
+    showlegend: true,
     legend: {
-      x: 0.01,
-      y: 0.01,
+      x: props.layout.xLegend,
+      y: props.layout.yLegend,
     },
+    width: window.innerWidth < 1000 ? window.innerWidth : 750,
+    height: 600,
     hovermode: "closest",
     xaxis: {
       showspikes: true,
@@ -93,7 +98,7 @@ export default function Plotly(props) {
       },
     ],
     margin: {
-      l: 80,
+      l: 120,
       r: 80,
       t: 80,
       b: 80,
@@ -103,12 +108,10 @@ export default function Plotly(props) {
     font: { family: "Arial", size: 15 },
   };
 
-  layout.width = window.innerWidth < 1000 ? window.innerWidth : 840;
-
   // eslint-disable-next-line array-callback-return
+
   props.data.plotData.map((plotData, index) => {
     data.push({
-      showlegend: true,
       x: plotData.x,
       y: plotData.y,
       type: "scatter",
@@ -116,7 +119,7 @@ export default function Plotly(props) {
       name: plotData.name,
       marker: { color: plotColor[index] },
       line: {
-        width: 5,
+        width: plotData.width,
       },
     });
   });
