@@ -24,15 +24,15 @@ const routing = (
         <Router>
             <Switch>
                 <Route exact path="/" component={Main} />
-                <Route path="/blog" component={Blog} />
-                <Route path="/team" component={Team} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/requestInfo" component={RequestInfo} />
-                <Route path="/questionnaire" component={Questionnaire} />
-                <Route path="/enhance_oil_recovery" component={EnhanceOilRecovery} />
-                <Route path="/fracture_driven_interaction" component={FractureDrivenInteraction} />
-                <Route path="/cnerfoam" component={CnerFoam} />
-                <Route path="/why_cnergreen" component={WhyCnergreen} />
+                <Route exact path="/blog" component={Blog} />
+                <Route exact path="/#/team" component={Team} />
+                <Route exact path="/contact" component={Contact} />
+                <Route exact path="/requestInfo" component={RequestInfo} />
+                <Route exact path="/questionnaire" component={Questionnaire} />
+                <Route exact path="/enhance_oil_recovery" component={EnhanceOilRecovery} />
+                <Route exact path="/fracture_driven_interaction" component={FractureDrivenInteraction} />
+                <Route exact path="/cnerfoam" component={CnerFoam} />
+                <Route exact path="/why_cnergreen" component={WhyCnergreen} />
             </Switch>
         </Router>
     </div>
