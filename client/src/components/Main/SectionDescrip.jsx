@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./SectionDescrip.scss";
 import { FaRegHandPointRight } from "react-icons/fa";
-import Trail from "../Animation/Trail";
+// import Trail from "../Animation/Trail";
 
 const pictureWidth = 35;
 const pictureWidthStyle = { width: `${pictureWidth}vw` };
 
 function SectionDescrip({ content, direction, ...props }) {
-  console.log(props);
   const [coordinates, setCoordinates] = useState({ x: -1 });
   const [turn, setTurn] = useState("descripImg ");
 
@@ -35,42 +34,42 @@ function SectionDescrip({ content, direction, ...props }) {
 
   return (
     <div className={`descripContainer ${direction}`}>
-      <Trail
+      {/* <Trail
         open={true}
         xValue={animationDirection[0]}
         direction={"horizontal"}
-      >
-        <div className="descripTextContainer">
-          <div className="descripTextContainerTitle">{content.text[0]}</div>
-          <div>
-            <ul>
-              <li>{content.text[1]}</li>
-              <li>{content.text[2]}</li>
-              <li>{content.text[3]}</li>
-            </ul>
-          </div>
-          <a className="learnMoreButtonDiv" href={content.link}>
-            <button className="button1">
-              Learn More <FaRegHandPointRight id="learnMoreIcon" />
-            </button>
-          </a>
+      > */}
+      <div className="descripTextContainer">
+        <div className="descripTextContainerTitle">{content.text[0]}</div>
+        <div>
+          <ul>
+            <li>{content.text[1]}</li>
+            <li>{content.text[2]}</li>
+            <li>{content.text[3]}</li>
+          </ul>
         </div>
-      </Trail>
-      <Trail
+        <a className="learnMoreButtonDiv" href={content.link}>
+          <button className="button1">
+            Learn More <FaRegHandPointRight id="learnMoreIcon" />
+          </button>
+        </a>
+      </div>
+      {/* </Trail> */}
+      {/* <Trail
         open={true}
         xValue={animationDirection[1]}
         direction={"horizontal"}
-      >
-        <a href={content.link}>
-          <img
-            src={content.img}
-            onMouseMove={onMouse}
-            className={turn}
-            style={pictureWidthStyle}
-            alt="Italian Trulli"
-          />
-        </a>
-      </Trail>
+      > */}
+      <a href={content.link}>
+        <img
+          src={content.img}
+          onMouseMove={onMouse}
+          className={turn}
+          style={pictureWidthStyle}
+          alt="Italian Trulli"
+        />
+      </a>
+      {/* </Trail> */}
     </div>
   );
 }

@@ -19,16 +19,16 @@ import Trail from "../Animation/Trail";
 function Main(props) {
   const collaborators = [
     ["collaborator_1.png", "https://www.ucalgary.ca/"],
-    ["collaborator_2.png", "https://www.alberta.ca/greenstem.aspx"],
     ["collaborator_3.png", "https://innovatecalgary.com/"],
-    [
-      "collaborator_4.png",
-      "https://www.eco.ca/employment-programs/youth-placement/natural-resources/",
-    ],
     [
       "collaborator_5.jpg",
       "https://research.ucalgary.ca/energy/energy-research/canada-excellence-research-chair",
     ],
+    [
+      "collaborator_4.png",
+      "https://www.eco.ca/employment-programs/youth-placement/natural-resources/",
+    ],
+    ["collaborator_2.png", "https://www.alberta.ca/greenstem.aspx"],
   ];
   const gridInputTop = {
     e1: ["Enhance Oil Recovery", "rig.png"],
@@ -43,7 +43,7 @@ function Main(props) {
       text: [
         "CNERFOAM®",
         "Innovative nanoparticle-based stable viscous foam and injection technology",
-        "Access un-swept reservoir increasing oil recovery and CO2 storage",
+        "Access un-swept reservoir increasing oil recovery and CO₂ storage",
         "Maintains pressure in parent well avoiding fracture driven interactions, well damage, and production loss",
       ],
     },
@@ -54,7 +54,7 @@ function Main(props) {
         "Why Cnergreen?",
         "A unique team with more than 120 years of industry and management experience to deliver innovative solutions",
         "Customized products to reservoir specific and application specific properties to ensure stability",
-        "Made with commercially available components and any gas type (CO2, N2, natural gas, steam)",
+        "Made with commercially available components and any gas type (CO₂, N₂, natural gas, steam)",
       ],
     },
   };
@@ -62,8 +62,8 @@ function Main(props) {
   const [sectionDisplay, setSectionDisplay] = useState({
     sectionOne: true,
     sectionTwo: false,
-    sectionThree: false,
-    sectionFour: false,
+    sectionThree: true,
+    sectionFour: true,
     sectionSix: false,
   });
 
@@ -89,7 +89,7 @@ function Main(props) {
           <Trail open={true} xValue={0} direction={"horizontal"}>
             <TextCenter
               title={"CNERGREEN’s MISSION"}
-              content={`is to enable more responsible oil production
+              content={` is to enable more responsible oil production
               by increasing the efficiency of EOR through lower costs and accelerated
               timelines, and promotes more sustainable EOR through a reduced
               environmental impact of production and avoided emissions of CO₂.`}
@@ -123,15 +123,6 @@ function Main(props) {
         />
       )}
 
-      <Divider height={"60vh"}></Divider>
-
-      <DividerView
-        height={"0.1vh"}
-        onEnterViewport={() => {
-          setSectionDisplay({ ...sectionDisplay, sectionFour: true });
-        }}
-      />
-
       {sectionDisplay.sectionFour && (
         <SectionDescrip
           onEnterViewport={() => console.log("enter")}
@@ -140,7 +131,7 @@ function Main(props) {
         />
       )}
 
-      <Divider height={"60vh"}></Divider>
+      {/* <Divider height={"60vh"}></Divider> */}
       {sectionDisplay.sectionFive && (
         <Trail open={true} xValue={-500} direction={"horizontal"}>
           <Collaborators gridInput={collaborators} />

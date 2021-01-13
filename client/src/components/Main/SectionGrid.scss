@@ -28,12 +28,12 @@
 }
 
 .gridContainerItems:hover .right_turn {
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 .gridContainerItems:hover .left_turn {
-  -webkit-transform: rotate(30deg);
-  transform: rotate(-30deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(-15deg);
 }
 .gridContainerItems:hover .gridItemText {
   text-shadow: rgb(94, 191, 255) 1px 0 10px;

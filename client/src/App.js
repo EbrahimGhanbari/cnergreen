@@ -5,28 +5,28 @@ import { Link } from "react-router-dom";
 
 
 
-function App (props) {
+function App(props) {
 
   const [message, setMessage] = useState("Click the button to load data!")
 
   const fetchData = () => {
     axios.get('/api/data') // You can simply make your requests to "/api/whatever you want"
-    .then((response) => {
-      setMessage(response.data.message)
-    }) 
+      .then((response) => {
+        setMessage(response.data.message)
+      })
   }
 
 
 
   return (
     <div className="App">
-      <h1>{ message }</h1>
-      <button onClick={ fetchData } >
+      <h1>{message}</h1>
+      <button onClick={fetchData} >
         Fetch Data
-      </button>        
+      </button>
     </div>
   );
-    
+
 }
 
 export default App;

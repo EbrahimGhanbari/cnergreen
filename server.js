@@ -5,7 +5,7 @@ const BodyParser = require("body-parser");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const path = require("path");
-// require('dotenv').config();
+require('dotenv').config();
 
 // Express Configuration
 App.use(BodyParser.urlencoded({ extended: false }));
@@ -32,8 +32,6 @@ const corsOptions = {
   },
 };
 App.use(cors(corsOptions));
-
-
 
 App.use(
   cors({
@@ -100,6 +98,13 @@ if (process.env.NODE_ENV === "production") {
   App.use(Express.static(path.join(__dirname, "client/build")));
 }
 
+// App.get('/*', function (req, res) {
+//   res.sendFile(path.join(__dirname, 'client/build'), function (err) {
+//     if (err) {
+//       res.status(500).send(err)
+//     }
+//   })
+// })
 
 const PORT = process.env.PORT || 8080;
 App.listen(PORT, () => {

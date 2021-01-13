@@ -1,7 +1,7 @@
 {
   "name": "react-front-end",
   "version": "0.1.0",
-  "homepage": "https://www.cnergreen.ca",
+  "homepage": "http://cnergreen.ca",
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
