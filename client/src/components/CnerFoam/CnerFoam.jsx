@@ -1,6 +1,6 @@
 import React from "react";
 
-import TopNavbar from "../TopNavBar";
+import TopNavbar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import TextImage from "../Utilities/TextImage";
 import Divider from "../Utilities/Divider";

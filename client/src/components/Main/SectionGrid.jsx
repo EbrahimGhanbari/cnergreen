@@ -23,7 +23,7 @@ function SectionGrid({ gridInput }) {
   };
 
   return (
-    <div className="gridContainer">
+    <div id="application" className="gridContainer">
       <a className="gridContainerItems" href="/team">
         <img
           style={pictureWidthStyle}

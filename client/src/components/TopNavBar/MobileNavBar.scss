@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+.navbar_bootstrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: white;
+  font-family: $title-font;
+  font-weight: 300;
+  font-size: 22px;
+  color: #949392;
+}
+#mobilLogo {
+  width: 10vw;
+}
+
+.my-custom-class {
+  @import "~bootstrap/scss/bootstrap";
+}

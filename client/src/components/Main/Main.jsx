@@ -9,7 +9,7 @@ import SectionDescrip from "./SectionDescrip";
 import Collaborators from "./Collaborators";
 import TextCenter from "./TextCenter";
 
-import TopNavBar from "../TopNavBar";
+// import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import Divider from "../Utilities/Divider";
 
@@ -74,7 +74,7 @@ function Main(props) {
       {sectionDisplay.sectionOne && (
         <div id="section_One">
           <Trail open={true} xValue={-500} direction={"vertical"}>
-            <TopNavBar />
+            {/* <TopNavBar /> */}
           </Trail>
           <Trail open={true} xValue={500}>
             <SectionOne />
@@ -116,11 +116,13 @@ function Main(props) {
       />
 
       {sectionDisplay.sectionThree && (
-        <SectionDescrip
-          onEnterViewport={() => console.log("enter")}
-          direction={"left"}
-          content={content.e1}
-        />
+        <div id="solution">
+          <SectionDescrip
+            onEnterViewport={() => console.log("enter")}
+            direction={"left"}
+            content={content.e1}
+          />
+        </div>
       )}
 
       {sectionDisplay.sectionFour && (
