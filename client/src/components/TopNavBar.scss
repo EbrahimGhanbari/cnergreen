@@ -1,5 +1,4 @@
 @import "../styles/variables.scss";
-
 .topNav {
   display: flex;
   justify-content: space-between;
@@ -20,6 +19,15 @@
     text-decoration: none;
   }
 
+  @media screen and (max-width: 411px) {
+    .topNav {
+      display: flex;
+      flex-direction: column;
+    }
+    .topButton {
+      font-size: 14px;
+    }
+  }
   .topButtonGroup {
     position: relative;
     display: flex;
@@ -64,4 +72,11 @@
   nav.stroke ul li a:hover:after {
     width: 100%;
   }
+}
+
+.navbar_bootstrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: rgb(241, 247, 248);
 }
