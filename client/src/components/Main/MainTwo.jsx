@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import "./SectionGrid.scss";
+import "./MainTwo.scss";
 
 const pictureWidth = 18;
 const pictureWidthStyle = { width: `${pictureWidth}vw` };
 
-function SectionGrid({ gridInput }) {
+export default function ({ gridInput }) {
   const [coordinates, setCoordinates] = useState({ x: -1 });
   const [turn, setTurn] = useState("imgGrid ");
-
   const screenWidth = window.innerWidth;
 
   const onMouse = (e) => {
@@ -23,8 +22,8 @@ function SectionGrid({ gridInput }) {
   };
 
   return (
-    <div id="application" className="gridContainer">
-      <a className="gridContainerItems" href="/team">
+    <div id="application" className="MainTwo">
+      <a href="/team">
         <img
           style={pictureWidthStyle}
           onMouseMove={onMouse}
@@ -32,9 +31,9 @@ function SectionGrid({ gridInput }) {
           src={gridInput.e1[1]}
           alt="Italian Trulli"
         />
-        <div className="gridItemText"> {gridInput.e1[0]}</div>
+        <p> {gridInput.e1[0]}</p>
       </a>
-      <a className="gridContainerItems" href="/team">
+      <a href="/team">
         <img
           style={pictureWidthStyle}
           onMouseMove={onMouse}
@@ -42,9 +41,9 @@ function SectionGrid({ gridInput }) {
           src={gridInput.e2[1]}
           alt="Italian Trulli"
         />
-        <div className="gridItemText">{gridInput.e2[0]}</div>
+        <p>{gridInput.e2[0]}</p>
       </a>
-      <a className="gridContainerItems" href="/team">
+      <a href="/team">
         <img
           style={pictureWidthStyle}
           onMouseMove={onMouse}
@@ -52,10 +51,8 @@ function SectionGrid({ gridInput }) {
           src={gridInput.e3[1]}
           alt="Italian Trulli"
         />
-        <div className="gridItemText">{gridInput.e3[0]}</div>
+        <p>{gridInput.e3[0]}</p>
       </a>
     </div>
   );
 }
-
-export default SectionGrid;

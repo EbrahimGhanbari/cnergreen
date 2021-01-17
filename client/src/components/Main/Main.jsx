@@ -4,9 +4,10 @@ import { handleViewport } from "react-in-viewport";
 import "./Main.scss";
 
 import MainOne from "./MainOne";
-import SectionGrid from "./SectionGrid";
+import MainTwo from "./MainTwo";
 import SectionDescrip from "./SectionDescrip";
 import Collaborators from "./Collaborators";
+
 import TextCenter from "../Utilities/TextCenter";
 import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
@@ -43,7 +44,7 @@ export default function (props) {
         </Trail>
       </div>
 
-      <Divider height={"60vh"}></Divider>
+      {/* <Divider height={"1vw"}></Divider> */}
 
       <div id="sectionTwo">
         <Trail open={true} xValue={0} direction={"horizontal"}>
@@ -53,11 +54,11 @@ export default function (props) {
           />
         </Trail>
         <Trail open={true} xValue={-0} direction={"horizontal"}>
-          <SectionGrid gridInput={gridInputTop} />
+          <MainTwo gridInput={gridInputTop} />
         </Trail>
       </div>
 
-      <Divider height={"60vh"}></Divider>
+      {/* <Divider height={"60vh"}></Divider> */}
 
       <div id="solution">
         <SectionDescrip
@@ -85,7 +86,7 @@ export default function (props) {
           setSectionDisplay({ ...sectionDisplay, collaborators: true });
         }}
       />
-      <Divider height={"25vh"}></Divider>
+      {/* <Divider height={"25vh"}></Divider> */}
       <Footer />
     </div>
   );

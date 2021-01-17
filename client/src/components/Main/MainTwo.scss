@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.MainTwo {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 16vh;
+  padding-bottom: 16vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+
+  a p {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 3.4vh;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  a:hover .right_turn {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  a:hover .left_turn {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(-15deg);
+  }
+  a:hover .gridItemText {
+    text-shadow: rgb(94, 191, 255) 1px 0 10px;
+    font-weight: 700;
+  }
+  .imgGrid {
+    -webkit-transition: -webkit-transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 540px) {
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+}
+
+@media screen and (min-width: 1350px) {
+}
