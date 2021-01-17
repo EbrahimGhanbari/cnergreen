@@ -5,5 +5,5 @@ import LaptopNavBar from "./LaptopNavBar";
 
 export default function TopNavBar(props) {
   console.log(window.innerWidth);
-  return window.innerWidth <= 500 ? <MobileNavBar /> : <LaptopNavBar />;
+  return window.innerWidth <= 540 ? <MobileNavBar /> : <LaptopNavBar />;
 }

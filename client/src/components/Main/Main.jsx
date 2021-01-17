@@ -3,138 +3,75 @@ import { handleViewport } from "react-in-viewport";
 
 import "./Main.scss";
 
-import SectionOne from "./SectionOne";
+import MainOne from "./MainOne";
 import SectionGrid from "./SectionGrid";
 import SectionDescrip from "./SectionDescrip";
 import Collaborators from "./Collaborators";
-import TextCenter from "./TextCenter";
-
-// import TopNavBar from "../TopNavBar/TopNavBar";
+import TextCenter from "../Utilities/TextCenter";
+import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import Divider from "../Utilities/Divider";
-
-//Animations
 import Trail from "../Animation/Trail";
 
-function Main(props) {
-  const collaborators = [
-    ["collaborator_1.png", "https://www.ucalgary.ca/"],
-    ["collaborator_3.png", "https://innovatecalgary.com/"],
-    [
-      "collaborator_5.jpg",
-      "https://research.ucalgary.ca/energy/energy-research/canada-excellence-research-chair",
-    ],
-    [
-      "collaborator_4.png",
-      "https://www.eco.ca/employment-programs/youth-placement/natural-resources/",
-    ],
-    ["collaborator_2.png", "https://www.alberta.ca/greenstem.aspx"],
-  ];
-  const gridInputTop = {
-    e1: ["Enhance Oil Recovery", "rig.png"],
-    e2: ["Fracture Driven Interaction", "foam.png"],
-    e3: ["Request Demo", "stat.png"],
-  };
+const mainContent = require("./main.json");
 
-  const content = {
-    e1: {
-      link: "/cnerfoam",
-      img: "foam_product.png",
-      text: [
-        "CNERFOAM®",
-        "Innovative nanoparticle-based stable viscous foam and injection technology",
-        "Access un-swept reservoir increasing oil recovery and CO₂ storage",
-        "Maintains pressure in parent well avoiding fracture driven interactions, well damage, and production loss",
-      ],
-    },
-    e2: {
-      link: "/why_cnergreen",
-      img: "dollar.png",
-      text: [
-        "Why Cnergreen?",
-        "A unique team with more than 120 years of industry and management experience to deliver innovative solutions",
-        "Customized products to reservoir specific and application specific properties to ensure stability",
-        "Made with commercially available components and any gas type (CO₂, N₂, natural gas, steam)",
-      ],
-    },
-  };
+export default function (props) {
+  const collaborators = mainContent.collaborators;
+  const gridInputTop = mainContent.gridInputTop;
+  const content = mainContent.content;
 
   const [sectionDisplay, setSectionDisplay] = useState({
-    sectionOne: true,
-    sectionTwo: false,
-    sectionThree: true,
-    sectionFour: true,
-    sectionSix: false,
+    collaborators: false,
   });
-
   const DividerView = handleViewport(Divider);
 
   return (
     <div>
-      {sectionDisplay.sectionOne && (
-        <div id="section_One">
-          <Trail open={true} xValue={-500} direction={"vertical"}>
-            {/* <TopNavBar /> */}
-          </Trail>
-          <Trail open={true} xValue={500}>
-            <SectionOne />
-          </Trail>
-        </div>
-      )}
-
+      <div>
+        <Trail
+          style={{ height: "20vh" }}
+          open={true}
+          xValue={200}
+          direction={"vertical"}
+        >
+          <TopNavBar />
+        </Trail>
+        <Trail open={true} xValue={-200} direction={"vertical"}>
+          <MainOne />
+        </Trail>
+      </div>
       <Divider height={"60vh"}></Divider>
 
-      {sectionDisplay.sectionTwo && (
-        <div id="sectionTwo">
-          <Trail open={true} xValue={0} direction={"horizontal"}>
-            <TextCenter
-              title={"CNERGREEN’s MISSION"}
-              content={` is to enable more responsible oil production
-              by increasing the efficiency of EOR through lower costs and accelerated
-              timelines, and promotes more sustainable EOR through a reduced
-              environmental impact of production and avoided emissions of CO₂.`}
-            />
-          </Trail>
-          <Trail open={true} xValue={-0} direction={"horizontal"}>
-            <SectionGrid gridInput={gridInputTop} />
-          </Trail>
-        </div>
-      )}
-
-      <DividerView
-        height={"0.1vh"}
-        onEnterViewport={() => {
-          setSectionDisplay({ ...sectionDisplay, sectionTwo: true });
-        }}
-      />
-      <Divider height={"60vh"}></Divider>
-      <DividerView
-        height={"0.1vh"}
-        onEnterViewport={() => {
-          setSectionDisplay({ ...sectionDisplay, sectionThree: true });
-        }}
-      />
-
-      {sectionDisplay.sectionThree && (
-        <div id="solution">
-          <SectionDescrip
-            onEnterViewport={() => console.log("enter")}
-            direction={"left"}
-            content={content.e1}
+      <div id="sectionTwo">
+        <Trail open={true} xValue={0} direction={"horizontal"}>
+          <TextCenter
+            title={mainContent.textCenter.title}
+            content={mainContent.textCenter.content}
           />
-        </div>
-      )}
+        </Trail>
+        <Trail open={true} xValue={-0} direction={"horizontal"}>
+          <SectionGrid gridInput={gridInputTop} />
+        </Trail>
+      </div>
 
-      {sectionDisplay.sectionFour && (
+      <Divider height={"60vh"}></Divider>
+
+      <div id="solution">
         <SectionDescrip
           onEnterViewport={() => console.log("enter")}
-          direction={"right"}
-          content={content.e2}
+          direction={"left"}
+          content={content.e1}
         />
-      )}
+      </div>
+
+      <SectionDescrip
+        onEnterViewport={() => console.log("enter")}
+        direction={"right"}
+        content={content.e2}
+      />
 
       {/* <Divider height={"60vh"}></Divider> */}
-      {sectionDisplay.sectionFive && (
+      {sectionDisplay.collaborators && (
         <Trail open={true} xValue={-500} direction={"horizontal"}>
           <Collaborators gridInput={collaborators} />
         </Trail>
@@ -142,13 +79,11 @@ function Main(props) {
       <DividerView
         height={"0.1vh"}
         onEnterViewport={() => {
-          setSectionDisplay({ ...sectionDisplay, sectionFive: true });
+          setSectionDisplay({ ...sectionDisplay, collaborators: true });
         }}
       />
       <Divider height={"25vh"}></Divider>
-      {<Footer />}
+      <Footer />
     </div>
   );
 }
-
-export default Main;

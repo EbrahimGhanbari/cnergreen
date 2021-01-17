@@ -1,0 +1,178 @@
+@import "../../styles/variables.scss";
+
+.MainOne {
+  .MainOne_1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5vh;
+    padding-left: 18.5vw;
+    p {
+      width: 60vw;
+      font-family: $title-font;
+      font-weight: 700;
+      font-size: 54px;
+    }
+    .MainOne_1_1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 7vw;
+      .line {
+        background: $grey-color;
+        height: 3px;
+      }
+
+      #left_line {
+        width: 40vw;
+      }
+
+      button {
+        cursor: pointer;
+        border-radius: 50px;
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 23px;
+        width: 19vw;
+        height: 8vh;
+        border: none;
+        color: white;
+        background-color: $logo-color;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+      button:focus {
+        outline: none;
+      }
+      button:hover {
+        background-color: rgb(29, 29, 29);
+      }
+    }
+    .MainOne_1_2 {
+      font-family: $title-font;
+      width: 42vw;
+      font-weight: 400;
+      font-size: 22px;
+    }
+  }
+  .MainOne_2 {
+    img {
+      width: 100%;
+    }
+  }
+  .green_line {
+    background: $line-green;
+    height: 2vh;
+  }
+
+  .blue_line {
+    background: $line-gradient-blue;
+    height: 6vh;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 540px) {
+  .MainOne {
+    .MainOne_1 {
+      padding: 0vh 8vw 5vh 10vw;
+      p {
+        width: 60vw;
+        font-size: 18px;
+      }
+      .MainOne_1_1 {
+        #left_line {
+          width: 40vw;
+        }
+        button {
+          font-size: 12px;
+          width: 19vw;
+          height: 5vh;
+        }
+      }
+      .MainOne_1_2 {
+        width: 42vw;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+  .MainOne {
+    .MainOne_1 {
+      padding: 0vh 8vw 5vh 14vw;
+      p {
+        width: 60vw;
+        font-size: 27px;
+      }
+      .MainOne_1_1 {
+        #left_line {
+          width: 40vw;
+        }
+        button {
+          font-size: 14px;
+          width: 19vw;
+          height: 6vh;
+        }
+      }
+      .MainOne_1_2 {
+        width: 42vw;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+  .MainOne {
+    .MainOne_1 {
+      padding: 0vh 8vw 5vh 14vw;
+      p {
+        width: 55vw;
+        font-size: 38px;
+      }
+      .MainOne_1_1 {
+        #left_line {
+          width: 40vw;
+        }
+        button {
+          font-size: 19px;
+          width: 19vw;
+          height: 7vh;
+        }
+      }
+      .MainOne_1_2 {
+        width: 42vw;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .MainOne {
+    .MainOne_1 {
+      padding: 0vh 8vw 5vh 18vw;
+      p {
+        width: 60vw;
+        font-size: 54px;
+      }
+      .MainOne_1_1 {
+        #left_line {
+          width: 40vw;
+        }
+        button {
+          font-size: 23px;
+          width: 19vw;
+          height: 8vh;
+        }
+      }
+      .MainOne_1_2 {
+        width: 42vw;
+        font-size: 22px;
+      }
+    }
+  }
+}

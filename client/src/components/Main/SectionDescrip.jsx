@@ -34,11 +34,6 @@ function SectionDescrip({ content, direction, ...props }) {
 
   return (
     <div className={`descripContainer ${direction}`}>
-      {/* <Trail
-        open={true}
-        xValue={animationDirection[0]}
-        direction={"horizontal"}
-      > */}
       <div className="descripTextContainer">
         <div className="descripTextContainerTitle">{content.text[0]}</div>
         <div>
@@ -54,12 +49,6 @@ function SectionDescrip({ content, direction, ...props }) {
           </button>
         </a>
       </div>
-      {/* </Trail> */}
-      {/* <Trail
-        open={true}
-        xValue={animationDirection[1]}
-        direction={"horizontal"}
-      > */}
       <a href={content.link}>
         <img
           src={content.img}
@@ -69,7 +58,6 @@ function SectionDescrip({ content, direction, ...props }) {
           alt="Italian Trulli"
         />
       </a>
-      {/* </Trail> */}
     </div>
   );
 }

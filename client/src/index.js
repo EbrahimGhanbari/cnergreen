@@ -19,11 +19,10 @@ import Main from './components/Main/Main'
 // import FractureDrivenInteraction from './components/Solution/FractureDrivenInteraction/FractureDrivenInteraction';
 // import CnerFoam from './components/CnerFoam/CnerFoam';
 // import WhyCnergreen from './components/WhyCnergreen/WhyCnergreen';
-import TopNavBar from "./components/TopNavBar/TopNavBar";
 
 const routing = (
     <div>
-        <TopNavBar />
+
         <Router>
             <Switch>
                 <Route exact path="/" component={Main} />

@@ -8,6 +8,8 @@
   font-weight: 300;
   font-size: 22px;
   color: #949392;
+
+  z-index: 1000;
 }
 #mobilLogo {
   width: 10vw;
@@ -15,4 +17,7 @@
 
 .my-custom-class {
   @import "~bootstrap/scss/bootstrap";
+}
+#mobileNavBar {
+  height: 100px !important;
 }
