@@ -44,6 +44,7 @@ export default function (props) {
         </Trail>
       </div>
 
+      <div className="divider-1"></div>
       {/* <Divider height={"1vw"}></Divider> */}
 
       <div id="sectionTwo">
@@ -57,22 +58,14 @@ export default function (props) {
           <MainTwo gridInput={gridInputTop} />
         </Trail>
       </div>
-
+      <div className="divider-2"></div>
       {/* <Divider height={"60vh"}></Divider> */}
 
       <div id="solution">
-        <SectionDescrip
-          onEnterViewport={() => console.log("enter")}
-          direction={"left"}
-          content={content.e1}
-        />
+        <SectionDescrip direction={"left"} content={content.e1} />
       </div>
 
-      <SectionDescrip
-        onEnterViewport={() => console.log("enter")}
-        direction={"right"}
-        content={content.e2}
-      />
+      <SectionDescrip direction={"right"} content={content.e2} />
 
       {/* <Divider height={"60vh"}></Divider> */}
       {sectionDisplay.collaborators && (

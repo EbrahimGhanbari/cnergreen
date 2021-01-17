@@ -6,9 +6,15 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 16vh;
-  padding-bottom: 16vh;
+  padding-bottom: 0vh;
   padding-left: 7vw;
   padding-right: 7vw;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   a p {
     text-decoration: none;
@@ -39,13 +45,64 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 540px) {
+  .MainTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    a {
+      padding-bottom: 20px;
+    }
+
+    a p {
+      padding-top: 3.4vh;
+      font-size: 14px;
+    }
+  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 850px) {
+  .MainTwo {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+    a p {
+      padding-top: 3.4vh;
+      font-size: 16px;
+    }
+  }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1350px) {
+  .MainTwo {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    a p {
+      padding-top: 3.4vh;
+      font-size: 18px;
+    }
+  }
 }
 
 @media screen and (min-width: 1350px) {
+  .MainTwo {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    a p {
+      padding-top: 3.4vh;
+      font-size: 24px;
+    }
+  }
 }

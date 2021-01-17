@@ -1,6 +1,6 @@
 {
   "gridInputTop": {
-    "e1": ["Enhance Oil Recovery", "rig.png"],
+    "e1": ["Enhanced Oil Recovery", "rig.png"],
     "e2": ["Fracture Driven Interaction", "foam.png"],
     "e3": ["Request Demo", "stat.png"]
   },

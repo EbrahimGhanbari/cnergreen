@@ -4,3 +4,48 @@
   position: relative;
   z-index: 10;
 }
+
+@media screen and (min-width: 350px) and (max-width: 540px) {
+  .divider-1 {
+    height: 100px;
+  }
+  .divider-2 {
+    height: 420px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .divider-1 {
+    height: 150px;
+  }
+  .divider-2 {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 950px) {
+  .divider-1 {
+    height: 220px;
+  }
+  .divider-2 {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1350px) {
+  .divider-1 {
+    height: 300px;
+  }
+  .divider-2 {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .divider-1 {
+    height: 380px;
+  }
+  .divider-2 {
+    height: 100px;
+  }
+}
