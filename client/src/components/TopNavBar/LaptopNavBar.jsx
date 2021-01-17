@@ -5,11 +5,11 @@ import "./LaptopNavBar.scss";
 
 export default function (props) {
   return (
-    <section className="topNav">
+    <section className="navbar_laptop">
       <div>
-        <img id="logo" src="cnergreenlogo.png" alt="Italian Trulli" />
+        <img src="cnergreenlogo.png" alt="Italian Trulli" />
       </div>
-      <nav className="stroke topButtonGroup">
+      <nav className="stroke">
         <ul>
           <li>
             <a className="topButton" href="/">

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Trail, animated } from "react-spring/renderprops";
 import "./TrailText.scss";
 
-function TrailText(props) {
+export default function (props) {
   //convert text to array
   let items = "";
   if (props.text) {
@@ -17,7 +17,7 @@ function TrailText(props) {
   //control the hovering over "E"
   useEffect(() => {
     setState((state) => ({ ...state, toggle: props.toggle }));
-  }, [props.toggle])
+  }, [props.toggle]);
 
   return (
     <Trail
@@ -42,5 +42,3 @@ function TrailText(props) {
     </Trail>
   );
 }
-
-export default TrailText;

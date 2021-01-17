@@ -1,15 +1,22 @@
 @import "../../styles/variables.scss";
-.topNav {
+.navbar_laptop {
   display: flex;
   justify-content: space-between;
   padding-bottom: 5vh;
 
-  #logo {
+  div img {
     width: 20vw;
     padding-top: 5vh;
     padding-left: 5vw;
   }
-  .topButton {
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vh;
+    padding-right: 5vw;
+  }
+  ul li a {
     position: relative;
     font-family: $title-font;
     font-weight: 300;
@@ -17,23 +24,6 @@
     margin: 2vw;
     color: #949392;
     text-decoration: none;
-  }
-
-  @media screen and (max-width: 411px) {
-    .topNav {
-      display: flex;
-      flex-direction: column;
-    }
-    .topButton {
-      font-size: 14px;
-    }
-  }
-  .topButtonGroup {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5vh;
-    padding-right: 5vw;
   }
 
   ul {
@@ -71,5 +61,21 @@
   }
   nav.stroke ul li a:hover:after {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+  .navbar_laptop {
+    ul li a {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+  .navbar_laptop {
+    ul li a {
+      font-size: 20px;
+    }
   }
 }

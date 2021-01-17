@@ -8,29 +8,29 @@ const options = [
   [" Fracture Driven Interaction", "/fracture_driven_interaction"],
 ];
 
-function Dropdown() {
-  const [isOpen, setIsOpen] = useState("dropdown_container hiddenDropdown");
+export default function (props) {
+  const [isOpen, setIsOpen] = useState("hideDropdown");
 
   const togglingMouseEnter = () => {
     clearTimeout(timeOut);
-    setIsOpen("dropdown_container showDropdown");
+    setIsOpen("showDropdown");
   };
 
   let timeOut = {};
   const togglingMouseLeave = () => {
     timeOut = setTimeout(() => {
-      setIsOpen("dropdown_container hiddenDropdown");
+      setIsOpen("hideDropdown");
     }, 300);
   };
 
   return (
     <div onMouseEnter={togglingMouseEnter} onMouseLeave={togglingMouseLeave}>
-      <a className="topButton">
+      <a>
         Solution <IoMdArrowDropdown />
       </a>
 
       <div
-        className={isOpen}
+        className={`${isOpen} dropdown_container`}
         onMouseEnter={togglingMouseEnter}
         onMouseLeave={togglingMouseLeave}
       >
@@ -46,5 +46,3 @@ function Dropdown() {
     </div>
   );
 }
-
-export default Dropdown;

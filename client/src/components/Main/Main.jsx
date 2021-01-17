@@ -27,7 +27,7 @@ export default function (props) {
 
   return (
     <div>
-      <div>
+      <div className="main_nav">
         <Trail
           style={{ height: "20vh" }}
           open={true}
@@ -36,10 +36,13 @@ export default function (props) {
         >
           <TopNavBar />
         </Trail>
+      </div>
+      <div>
         <Trail open={true} xValue={-200} direction={"vertical"}>
           <MainOne />
         </Trail>
       </div>
+
       <Divider height={"60vh"}></Divider>
 
       <div id="sectionTwo">

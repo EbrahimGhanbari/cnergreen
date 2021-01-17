@@ -1,23 +1,22 @@
 @import "../../styles/variables.scss";
-.navbar_bootstrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  background-color: white;
-  font-family: $title-font;
-  font-weight: 300;
-  font-size: 22px;
-  color: #949392;
 
-  z-index: 1000;
-}
-#mobilLogo {
-  width: 10vw;
-}
-
-.my-custom-class {
+.navbar_mobile {
   @import "~bootstrap/scss/bootstrap";
-}
-#mobileNavBar {
-  height: 100px !important;
+  cursor: pointer;
+
+  .navbar_bootstrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-family: $title-font;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: rgb(241, 247, 248);
+    // border-width: 4px;
+    // border-style: inset;
+    // color: #949392;
+  }
+  img {
+    width: 7vw;
+  }
 }

@@ -1,1 +1,6 @@
 @import "../../styles/variables.scss";
+
+.main_nav {
+  position: relative;
+  z-index: 10;
+}

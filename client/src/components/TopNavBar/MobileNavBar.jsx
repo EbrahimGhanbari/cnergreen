@@ -9,18 +9,17 @@ import {
   NavLink,
 } from "reactstrap";
 import { Link } from "react-scroll";
-
 import "./MobileNavBar.scss";
 
-export default function MobileNavBar(props) {
+export default function (props) {
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div className="my-custom-class">
+    <div className="navbar_mobile">
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="mr-auto">
-          <img id="mobilLogo" src="logoNoText.png" alt="Italian Trulli" />
+          <img src="logoNoText.png" alt="Italian Trulli" />
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>

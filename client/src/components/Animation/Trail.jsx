@@ -1,7 +1,7 @@
 import React from "react";
 import { useTrail, a } from "react-spring";
 
-function Trail({ open, children, direction, xValue, ...props }) {
+export default function ({ open, children, direction, xValue, ...props }) {
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
     config: { mass: 100, tension: 2000, friction: 1000 },
@@ -35,5 +35,3 @@ function Trail({ open, children, direction, xValue, ...props }) {
     </div>
   );
 }
-
-export default Trail;
