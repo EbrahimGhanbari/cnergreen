@@ -1,15 +1,16 @@
 @import "../../styles/variables.scss";
 
 .MainFour {
-  hr {
-    width: 65vw;
-    background-color: #9d9d9c;
-  }
-
   padding: 5vh 21vw 0vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+
+  hr {
+    width: 65vw;
+    background-color: #9d9d9c;
+  }
 
   a {
     padding: 2vw;
@@ -20,16 +21,76 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 539px) {
+  .MainFour {
+    padding: 0vh 5vw 0vh;
+    hr {
+      width: 80vw;
+    }
+    a {
+      padding: 2vw;
+    }
+    a img {
+      height: 12vw;
+    }
+  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 780px) {
+  .MainFour {
+    padding: 0vh 7vw 0vh;
+    hr {
+      width: 80vw;
+    }
+    a {
+      padding: 2vw;
+    }
+    a img {
+      height: 10vw;
+    }
+  }
 }
 
 @media screen and (min-width: 780px) and (max-width: 950px) {
+  .MainFour {
+    padding: 0vh 10vw 0vh;
+    hr {
+      width: 80vw;
+    }
+    a {
+      padding: 2vw;
+    }
+    a img {
+      height: 11vh;
+    }
+  }
 }
 
 @media screen and (min-width: 950px) and (max-width: 1350px) {
+  .MainFour {
+    padding: 0vh 20vw 0vh;
+    hr {
+      width: 75vw;
+    }
+    a {
+      padding: 2vw;
+    }
+    a img {
+      height: 11vh;
+    }
+  }
 }
 
 @media screen and (min-width: 1350px) {
+  .MainFour {
+    padding: 0vh 20vw 0vh;
+    hr {
+      width: 75vw;
+    }
+    a {
+      padding: 2vw;
+    }
+    a img {
+      height: 11vh;
+    }
+  }
 }
