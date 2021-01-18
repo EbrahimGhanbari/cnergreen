@@ -6,7 +6,7 @@ import "./Main.scss";
 import MainOne from "./MainOne";
 import MainTwo from "./MainTwo";
 import MainThree from "./MainThree";
-import Collaborators from "./Collaborators";
+import Collaborators from "./MainFour";
 import TextCenter from "../Utilities/TextCenter";
 import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
@@ -41,10 +41,7 @@ export default function (props) {
           <MainOne />
         </Trail>
       </div>
-
       <div className="divider-1"></div>
-      {/* <Divider height={"1vw"}></Divider> */}
-
       <div id="sectionTwo">
         <Trail open={true} xValue={0} direction={"horizontal"}>
           <TextCenter
@@ -52,18 +49,15 @@ export default function (props) {
             content={mainContent.textCenter.content}
           />
         </Trail>
+        <div id="application"></div>
         <Trail open={true} xValue={-0} direction={"horizontal"}>
           <MainTwo gridInput={gridInputTop} />
         </Trail>
       </div>
       <div className="divider-2"></div>
-      <div id="solution">
-        <MainThree direction={"left"} content={content.e1} />
-      </div>
-
+      <div id="solution"></div>
+      <MainThree direction={"left"} content={content.e1} />
       <MainThree direction={"right"} content={content.e2} />
-
-      {/* <Divider height={"60vh"}></Divider> */}
       {sectionDisplay.collaborators && (
         <Trail open={true} xValue={-500} direction={"horizontal"}>
           <Collaborators gridInput={collaborators} />
@@ -75,7 +69,6 @@ export default function (props) {
           setSectionDisplay({ ...sectionDisplay, collaborators: true });
         }}
       />
-      {/* <Divider height={"25vh"}></Divider> */}
       <Footer />
     </div>
   );

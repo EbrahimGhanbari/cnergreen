@@ -5,7 +5,18 @@
   z-index: 10;
 }
 
-@media screen and (min-width: 350px) and (max-width: 540px) {
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 350px) and (max-width: 539px) {
   .divider-1 {
     height: 100px;
   }

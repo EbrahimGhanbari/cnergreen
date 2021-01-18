@@ -5,7 +5,7 @@ export default function ({ gridInput }) {
   const [coordinates, setCoordinates] = useState({ x: -1 });
   const [turn, setTurn] = useState("imgGrid ");
   const screenWidth = window.innerWidth;
-  const pictureWidth = screenWidth <= 540 ? 35 : 18;
+  const pictureWidth = screenWidth < 539 ? 35 : 18;
   const pictureWidthStyle = { width: `${pictureWidth}vw` };
 
   const onMouse = (e) => {
@@ -21,7 +21,7 @@ export default function ({ gridInput }) {
   };
 
   return (
-    <div id="application" className="MainTwo">
+    <div className="MainTwo">
       <a href="/team">
         <img
           style={pictureWidthStyle}

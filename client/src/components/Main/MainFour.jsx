@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
-import "./Collaborators.scss";
+import "./MainFour.scss";
 
-function Collaborators({ gridInput }) {
+export default function ({ gridInput }) {
   console.log(gridInput);
   return (
     <div className="collaborators">
@@ -16,5 +16,3 @@ function Collaborators({ gridInput }) {
     </div>
   );
 }
-
-export default Collaborators;

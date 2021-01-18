@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./MainThree.scss";
 
-const pictureWidth = 35;
-const pictureWidthStyle = { width: `${pictureWidth}vw` };
-
 export default function ({ content, direction, ...props }) {
+  const pictureWidth = 35;
+  const pictureWidthStyle = { width: `${pictureWidth}vw` };
   const [coordinates, setCoordinates] = useState({ x: -1 });
   const [turn, setTurn] = useState("");
   const screenWidth = window.innerWidth;
@@ -20,13 +19,6 @@ export default function ({ content, direction, ...props }) {
       setTurn("left_turn");
     }
   };
-
-  // let animationDirection = [];
-  // if (direction === "left") {
-  //   animationDirection = [-500, 500];
-  // } else if (direction === "right") {
-  //   animationDirection = [500, -500];
-  // }
 
   return (
     <div className={`MainThree ${direction}`}>
