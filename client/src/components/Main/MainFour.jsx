@@ -3,9 +3,8 @@ import React from "react";
 import "./MainFour.scss";
 
 export default function ({ gridInput }) {
-  console.log(gridInput);
   return (
-    <div className="collaborators">
+    <div className="MainFour">
       <hr />
       {gridInput.map((input) => (
         <a href={input[1]} target="_blank">

@@ -1,37 +1,29 @@
 @import "../styles/variables.scss";
-.footer_main {
-  padding-top: 25vh;
-}
-#green_line_footer {
-  height: 4vh;
-}
-#blue_line_footer {
-  height: 2vh;
-}
-#footer_section {
-  background-color: #d6d6d6;
-
-  #btm_line {
-    width: 80vw;
-  }
-}
 .footer {
-  padding: 4vh 10vw 2vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 25vh;
 
-  .footer_icons {
-    width: 6vw;
-    height: 6vw;
+  div section {
+    background-color: #d6d6d6;
   }
 
-  div img {
-    width: 15vw;
-  }
+  .footer_1_1 {
+    padding: 4vh 10vw 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  div a {
-    color: #9d9d9c;
+    .footer_icons {
+      width: 6vw;
+      height: 6vw;
+    }
+
+    div img {
+      width: 15vw;
+    }
+
+    div a {
+      color: #9d9d9c;
+    }
   }
 }
 
@@ -68,5 +60,53 @@
   justify-content: space-between;
   padding-left: 10vw;
   padding-right: 10vw;
+  font-family: $title-font;
   color: #9d9d9c;
+  p {
+    font-size: 18px;
+  }
+}
+
+#green_line_footer {
+  background: $line-green;
+  height: 4vh;
+}
+#blue_line_footer {
+  background: $line-gradient-blue;
+  height: 2vh;
+}
+#btm_line {
+  width: 80vw;
+}
+
+@media screen and (min-width: 350px) and (max-width: 539px) {
+  #txt_footer {
+    p {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+  #txt_footer {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+  #txt_footer {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  #txt_footer {
+    p {
+      font-size: 16px;
+    }
+  }
 }

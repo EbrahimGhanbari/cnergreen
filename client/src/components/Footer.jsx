@@ -5,7 +5,7 @@ import "./Footer.scss";
 import { AiFillLinkedin } from "react-icons/ai";
 import { ImYoutube2 } from "react-icons/im";
 
-export default function Footer(props) {
+export default function (props) {
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -14,12 +14,12 @@ export default function Footer(props) {
   const year = date.getFullYear();
 
   return (
-    <div className="footer_main">
+    <div className="footer">
       <hr className="green_line" id="green_line_footer" />
       <hr className="blue_line" id="blue_line_footer" />
       <div>
-        <section id="footer_section">
-          <div className="footer">
+        <section>
+          <div className="footer_1_1">
             <div onClick={scrollTop}>
               <img
                 id="footer_logo"
