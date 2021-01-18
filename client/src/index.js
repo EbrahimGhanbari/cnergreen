@@ -9,7 +9,7 @@ import './index.scss';
 
 // components
 // import App from './App';
-import Main from './components/Main/Main'
+import Main from './components/Main/Main';
 // import Contact from './components/Contact/Contact';
 // // import Blog from './components/Blog/Blog';
 // import Team from './components/Team/Team';

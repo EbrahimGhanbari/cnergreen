@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+@import "../../styles/utilities.scss";
 
 .MainOne {
   .MainOne_1 {
@@ -25,29 +26,6 @@
 
       #left_line {
         width: 40vw;
-      }
-
-      button {
-        cursor: pointer;
-        border-radius: 50px;
-        font-family: $title-font;
-        font-weight: 700;
-        font-size: 23px;
-        width: 19vw;
-        height: 8vh;
-        border: none;
-        color: white;
-        background-color: $logo-color;
-        a {
-          color: white;
-          text-decoration: none;
-        }
-      }
-      button:focus {
-        outline: none;
-      }
-      button:hover {
-        background-color: rgb(29, 29, 29);
       }
     }
     .MainOne_1_2 {
@@ -85,11 +63,6 @@
         #left_line {
           width: 40vw;
         }
-        button {
-          font-size: 12px;
-          width: 19vw;
-          height: 5vh;
-        }
       }
       .MainOne_1_2 {
         width: 42vw;
@@ -110,11 +83,6 @@
       .MainOne_1_1 {
         #left_line {
           width: 40vw;
-        }
-        button {
-          font-size: 14px;
-          width: 19vw;
-          height: 6vh;
         }
       }
       .MainOne_1_2 {
@@ -137,11 +105,6 @@
         #left_line {
           width: 40vw;
         }
-        button {
-          font-size: 19px;
-          width: 19vw;
-          height: 7vh;
-        }
       }
       .MainOne_1_2 {
         width: 42vw;
@@ -162,11 +125,6 @@
       .MainOne_1_1 {
         #left_line {
           width: 40vw;
-        }
-        button {
-          font-size: 23px;
-          width: 19vw;
-          height: 8vh;
         }
       }
       .MainOne_1_2 {

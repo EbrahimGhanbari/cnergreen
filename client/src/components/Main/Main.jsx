@@ -5,17 +5,15 @@ import "./Main.scss";
 
 import MainOne from "./MainOne";
 import MainTwo from "./MainTwo";
-import SectionDescrip from "./SectionDescrip";
+import MainThree from "./MainThree";
 import Collaborators from "./Collaborators";
-
 import TextCenter from "../Utilities/TextCenter";
 import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import Divider from "../Utilities/Divider";
 import Trail from "../Animation/Trail";
 
-const mainContent = require("./main.json");
-
+const mainContent = require("./data.json");
 export default function (props) {
   const collaborators = mainContent.collaborators;
   const gridInputTop = mainContent.gridInputTop;
@@ -59,13 +57,11 @@ export default function (props) {
         </Trail>
       </div>
       <div className="divider-2"></div>
-      {/* <Divider height={"60vh"}></Divider> */}
-
       <div id="solution">
-        <SectionDescrip direction={"left"} content={content.e1} />
+        <MainThree direction={"left"} content={content.e1} />
       </div>
 
-      <SectionDescrip direction={"right"} content={content.e2} />
+      <MainThree direction={"right"} content={content.e2} />
 
       {/* <Divider height={"60vh"}></Divider> */}
       {sectionDisplay.collaborators && (
@@ -84,3 +80,51 @@ export default function (props) {
     </div>
   );
 }
+
+// const mainContent = {
+//   gridInputTop: {
+//     e1: ["Enhanced Oil Recovery", "rig.png"],
+//     e2: ["Fracture Driven Interaction", "foam.png"],
+//     e3: ["Request Demo", "stat.png"],
+//   },
+//   collaborators: [
+//     ["collaborator_1.png", "https://www.ucalgary.ca/"],
+//     ["collaborator_3.png", "https://innovatecalgary.com/"],
+//     [
+//       "collaborator_5.jpg",
+//       "https://research.ucalgary.ca/energy/energy-research/canada-excellence-research-chair",
+//     ],
+//     [
+//       "collaborator_4.png",
+//       "https://www.eco.ca/employment-programs/youth-placement/natural-resources/",
+//     ],
+//     ["collaborator_2.png", "https://www.alberta.ca/greenstem.aspx"],
+//   ],
+//   content: {
+//     e1: {
+//       link: "/cnerfoam",
+//       img: "foam_product.png",
+//       text: [
+//         "CNERFOAM®",
+//         "Innovative nanoparticle-based stable viscous foam and injection technology",
+//         "Access un-swept reservoir increasing oil recovery and CO₂ storage",
+//         "Maintains pressure in parent well avoiding fracture driven interactions, well damage, and production loss",
+//       ],
+//     },
+//     e2: {
+//       link: "/why_cnergreen",
+//       img: "dollar.png",
+//       text: [
+//         "Why Cnergreen?",
+//         "A unique team with more than 120 years of industry and management experience to deliver innovative solutions",
+//         "Customized products to reservoir specific and application specific properties to ensure stability",
+//         "Made with commercially available components and any gas type (CO₂, N₂, natural gas, steam)",
+//       ],
+//     },
+//   },
+//   textCenter: {
+//     title: "CNERGREEN’s MISSION",
+//     content:
+//       " is to enable more responsible oil production by increasing the efficiency of EOR through lower costs and accelerated timelines, and promotes more sustainable EOR through a reduced environmental impact of production and avoided emissions of CO₂.",
+//   },
+// };

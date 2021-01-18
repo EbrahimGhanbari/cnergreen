@@ -1,0 +1,54 @@
+.button_blue {
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 23px;
+  width: 19vw;
+  height: 8vh;
+  border: none;
+  color: white;
+  background-color: $logo-color;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.button_blue:focus {
+  outline: none;
+}
+.button_blue:hover {
+  background-color: rgb(29, 29, 29);
+}
+
+@media screen and (min-width: 350px) and (max-width: 540px) {
+  .button_blue {
+    font-size: 12px;
+    width: 19vw;
+    height: 5vh;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+  .button_blue {
+    font-size: 14px;
+    width: 19vw;
+    height: 6vh;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+  .button_blue {
+    font-size: 19px;
+    width: 19vw;
+    height: 7vh;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .button_blue {
+    font-size: 23px;
+    width: 19vw;
+    height: 8vh;
+  }
+}

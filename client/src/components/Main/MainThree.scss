@@ -1,28 +1,18 @@
 @import "../../styles/variables.scss";
+@import "../../styles/utilities.scss";
 
-.left {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.right {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-
-.descripContainer {
+.MainThree {
   padding-left: 7vw;
   padding-right: 7vw;
   padding-bottom: 16vh;
 
-  .descripTextContainer {
+  div {
     padding-top: 4vh;
     padding-bottom: 12vh;
     width: 40vw;
     font-family: $title-font;
 
-    .descripTextContainerTitle {
+    .MainThree_1_1 {
       font-weight: 700;
       font-size: 35px;
       padding-bottom: 10vh;
@@ -31,15 +21,15 @@
       font-size: larger;
       padding-bottom: 1.5vh;
     }
+    a {
+      padding-top: 5vh;
+      display: flex;
+      justify-content: flex-end;
+      text-decoration: none;
+    }
   }
 
-  .learnMoreButtonDiv {
-    padding-top: 5vh;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .descripImg {
+  a img {
     -webkit-transition: -webkit-transform 0.9s ease-in-out;
     transition: transform 0.9s ease-in-out;
   }
@@ -52,4 +42,15 @@
     -webkit-transform: rotate(15deg);
     transform: rotate(-15deg);
   }
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }

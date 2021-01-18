@@ -8,9 +8,12 @@ export default function () {
         <p>Clean and Efficient Hydrocarbon Production</p>
         <div className="MainOne_1_1">
           <div className="line" id="left_line"></div>
-          <button>
+          <a href="/contact">
+            <button className="button_blue">Contact</button>
+          </a>
+          {/* <button className="button_blue">
             <a href="/contact">Contact</a>
-          </button>
+          </button> */}
         </div>
         <div className="MainOne_1_2">
           Putting Carbon where it's meant to be!
