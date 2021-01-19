@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
     HashRouter as Router,
-    Route, Switch, Link
+    Route
 } from 'react-router-dom';
 // import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
