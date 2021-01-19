@@ -40,13 +40,13 @@ export default function CnerFoam(props) {
       />
       <Divider height={"50vh"}></Divider>
       <TextImage
-        onEnterViewport={() => console.log("enter")}
+        // onEnterViewport={}
         direction={"left"}
         content={content.e1}
       />
       <Divider height={"60vh"}></Divider>
       <TextImage
-        onEnterViewport={() => console.log("enter")}
+        // onEnterViewport={() => console.log("enter")}
         direction={"right"}
         content={content.e2}
       />

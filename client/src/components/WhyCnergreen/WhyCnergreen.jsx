@@ -49,7 +49,7 @@ Superior stability and tunability of CnerFoam will result is step-change improve
       />
       <Divider height={"20vh"}></Divider>
       <TextGraph
-        onEnterViewport={() => console.log("enter")}
+        // onEnterViewport={() => console.log("enter")}
         direction={"left"}
         content={content.e1}
         data={dataFDIPressureMaintain}

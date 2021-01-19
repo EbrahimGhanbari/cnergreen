@@ -1,5 +1,5 @@
 import React from "react";
-import TopNavBar from "../TopNavBar";
+import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import TeamMember from "./TeamMember";
 

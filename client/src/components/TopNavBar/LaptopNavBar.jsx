@@ -20,7 +20,7 @@ export default function (props) {
             <Dropdown />
           </li>
           <li>
-            <a className="topButton" href="/team">
+            <a className="topButton" href="/#/team">
               Team
             </a>
           </li>
