@@ -2,51 +2,36 @@ import React from "react";
 import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import TeamMember from "./TeamMember";
+import Trail from "../Animation/Trail";
 
 import "./Team.scss";
+const teamMembers = require("./teamData.json").team;
 
-function Team(props) {
-  const teamMembers = [
-    {
-      name: "Ali Telmadarreie",
-      title: "Co-Founder & CEO",
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut ero labore et dolore.`,
-      link: `https://www.google.ca`,
-    },
-    {
-      name: "Steven Bryant",
-      title: "Co-Founder & CTO",
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut ero labore et dolore.`,
-      link: `https://www.google.ca`,
-    },
-    {
-      name: "Rodger Bernar",
-      title: "Chief Operationg Officer",
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut ero labore et dolore.`,
-      link: `https://www.google.ca`,
-    },
-    {
-      name: "Alfred Fischer",
-      title: "Senior Advisor",
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut ero labore et dolore.`,
-      link: `https://www.google.ca`,
-    },
-  ];
+export default function (props) {
   return (
-    <div>
-      <TopNavBar />
-      <div className="team_container">
-        {teamMembers.map((member) => (
-          <TeamMember member={member} />
-        ))}
+    <div className="team">
+      <div className="main_nav">
+        <Trail
+          style={{ height: "20vh" }}
+          open={true}
+          xValue={200}
+          direction={"vertical"}
+        >
+          <TopNavBar />
+        </Trail>
       </div>
+      <div className="divider-3"></div>
+      <div className="team_2">
+        <Trail open={true} xValue={-200} direction={"vertical"}>
+          <div className="team_container">
+            {teamMembers.map((member) => (
+              <TeamMember member={member} />
+            ))}
+          </div>
+        </Trail>
+      </div>
+      <div className="divider-4"></div>
       <Footer />
     </div>
   );
 }
-
-export default Team;

@@ -1,0 +1,32 @@
+{
+  "team": [
+    {
+      "name": "Ali Telmadarreie",
+      "title": "Co-Founder & CEO",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n      tempor incididunt ut ero labore et dolore.",
+      "link": "https://www.google.ca",
+      "img": "team_1.jpg"
+    },
+    {
+      "name": "Steven Bryant",
+      "title": "Co-Founder & CTO",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n      tempor incididunt ut ero labore et dolore.",
+      "link": "https://www.google.ca",
+      "img": "team_2.jpg"
+    },
+    {
+      "name": "Rodger Bernar",
+      "title": "Chief Operationg Officer",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n      tempor incididunt ut ero labore et dolore.",
+      "link": "https://www.google.ca",
+      "img": "team_3.jpg"
+    },
+    {
+      "name": "Alfred Fischer",
+      "title": "Senior Advisor",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n      tempor incididunt ut ero labore et dolore.",
+      "link": "https://www.google.ca",
+      "img": "team_4.gif"
+    }
+  ]
+}
