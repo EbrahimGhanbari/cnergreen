@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import "./Dropdown.scss";
 import { IoMdArrowDropdown, IoMdCheckmark } from "react-icons/io";
 
-const options = [
-  [" Enhance Oil Recovery", "/enhance_oil_recovery"],
-  [" Fracture Driven Interaction", "/fracture_driven_interaction"],
-];
-
 export default function (props) {
+  const options = [
+    [" Enhanced Oil Recovery", "/enhance_oil_recovery"],
+    [" Fracture Driven Interaction", "/fracture_driven_interaction"],
+  ];
   const [isOpen, setIsOpen] = useState("hideDropdown");
 
   const togglingMouseEnter = () => {

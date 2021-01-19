@@ -14,8 +14,7 @@ import './index.scss';
 // components
 // import App from './App';
 import Main from './components/Main/Main';
-// import Contact from './components/Contact/Contact';
-// // import Blog from './components/Blog/Blog';
+import Contact from './components/Contact/Contact';
 import Team from './components/Team/Team';
 // import RequestInfo from './components/Contact/RequestInfo';
 // import Questionnaire from './components/Contact/Questionnaire';
@@ -30,8 +29,8 @@ const routing = (
         <div>
             <Route exact path="/" component={Main} />
             <Route path="/team" component={Team} />
-            {/*<Route exact path="/contact" component={Contact} />
-                <Route exact path="/requestInfo" component={RequestInfo} />
+            <Route path="/contact" component={Contact} />
+            {/*    <Route exact path="/requestInfo" component={RequestInfo} />
                 <Route exact path="/questionnaire" component={Questionnaire} />
                 <Route exact path="/enhance_oil_recovery" component={EnhanceOilRecovery} />
                 <Route exact path="/fracture_driven_interaction" component={FractureDrivenInteraction} />

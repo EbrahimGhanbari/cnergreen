@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./TeamMember.scss";
 import { AiFillLinkedin } from "react-icons/ai";

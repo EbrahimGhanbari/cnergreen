@@ -25,7 +25,7 @@ export default function (props) {
             </a>
           </li>
           <li>
-            <a className="topButton" href="/contact">
+            <a className="topButton" href="/#/contact">
               Contact
             </a>
           </li>
