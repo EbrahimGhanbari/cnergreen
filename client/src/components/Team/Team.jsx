@@ -5,7 +5,7 @@ import TeamMember from "./TeamMember";
 import Trail from "../Animation/Trail";
 
 import "./Team.scss";
-const teamMembers = require("./teamData.json").team;
+const teamMembers = require("../../data/content.json").Team_Page.team;
 
 export default function (props) {
   return (
