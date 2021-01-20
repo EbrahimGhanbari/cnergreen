@@ -12,7 +12,7 @@
   height: 50px;
 }
 .divider-4 {
-  height: 100px;
+  height: 200px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 539px) {
@@ -26,7 +26,7 @@
     padding-right: 7vw;
   }
   .divider-4 {
-    height: 1650px;
+    height: 1900px;
   }
   .divider-3 {
     height: 0px;
@@ -35,7 +35,7 @@
 
 @media screen and (min-width: 540px) and (max-width: 850px) {
   .divider-4 {
-    height: 150px;
+    height: 250px;
   }
   .divider-3 {
     height: 0px;
@@ -51,12 +51,12 @@
     height: 30px;
   }
   .divider-4 {
-    height: 180px;
+    height: 280px;
   }
 }
 
 @media screen and (min-width: 1350px) {
   .divider-4 {
-    height: 150px;
+    height: 250px;
   }
 }
