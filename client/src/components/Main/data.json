@@ -19,7 +19,7 @@
   ],
   "content": {
     "e1": {
-      "link": "/cnerfoam",
+      "link": "/#/cnerfoam",
       "img": "foam_product.png",
       "text": [
         "CNERFOAM®",
@@ -29,7 +29,7 @@
       ]
     },
     "e2": {
-      "link": "/why_cnergreen",
+      "link": "/#/why_cnergreen",
       "img": "dollar.png",
       "text": [
         "Why Cnergreen?",

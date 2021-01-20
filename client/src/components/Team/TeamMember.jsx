@@ -9,8 +9,10 @@ export default function ({ member }) {
       <div>
         <img className="team_img" src={member.img} alt="Italian Trulli" />
       </div>
-      <div className="team_name">{member.name}</div>
-      <div className="team_title">{member.title}</div>
+      <div className="team_name">
+        {member.name}
+        <div className="team_title">{member.title}</div>
+      </div>
       <div className="team_desc">{member.desc}</div>
       <a href={member.link} target="_blank">
         <AiFillLinkedin className="team_icon" />

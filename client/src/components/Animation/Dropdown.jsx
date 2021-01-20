@@ -4,10 +4,7 @@ import "./Dropdown.scss";
 import { IoMdArrowDropdown, IoMdCheckmark } from "react-icons/io";
 
 export default function (props) {
-  const options = [
-    [" Enhanced Oil Recovery", "/enhance_oil_recovery"],
-    [" Fracture Driven Interaction", "/fracture_driven_interaction"],
-  ];
+  const options = props.options;
   const [isOpen, setIsOpen] = useState("hideDropdown");
 
   const togglingMouseEnter = () => {
@@ -25,7 +22,7 @@ export default function (props) {
   return (
     <div onMouseEnter={togglingMouseEnter} onMouseLeave={togglingMouseLeave}>
       <a>
-        Solution <IoMdArrowDropdown />
+        {props.title} <IoMdArrowDropdown />
       </a>
 
       <div

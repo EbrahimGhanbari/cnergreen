@@ -1,10 +1,10 @@
 import React from "react";
 
-import TopNavbar from "../TopNavBar";
+import TopNavbar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import Cover from "../Utilities/Cover";
 import Divider from "../Utilities/Divider";
-import TextCenter from "../Main/TextCenter";
+import TextCenter from "../Utilities/TextCenter";
 import TextGraph from "./TextGraph";
 
 import dataFDIPressureMaintain from "./FDIPressureMaintain";
@@ -31,7 +31,7 @@ const content = {
   },
 };
 
-export default function WhyCnergreen(props) {
+export default function (props) {
   return (
     <div>
       <TopNavbar />

@@ -29,6 +29,7 @@
   .team_title {
     font-weight: 400;
     font-size: 20px;
+    padding-top: 5px;
   }
 
   .team_desc {
@@ -54,6 +55,7 @@
     align-items: center;
     margin-bottom: 1vh;
     width: 70vw;
+    height: 75vh;
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 1vw;
@@ -78,6 +80,8 @@
     .team_desc {
       font-weight: 400;
       font-size: 14px;
+      padding-right: 6vw;
+      padding-left: 6vw;
     }
 
     .team_icon {
@@ -125,7 +129,7 @@
 
 @media screen and (min-width: 850px) and (max-width: 1350px) {
   .team_member {
-    height: 62vh;
+    height: 75vh;
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 1vw;
@@ -162,5 +166,38 @@
 @media screen and (min-width: 1350px) {
   .divider-4 {
     height: 150px;
+  }
+  .team_member {
+    height: 75vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 4vh;
+
+    .team_img {
+      height: 15vw;
+      width: 17vw;
+      object-fit: cover;
+    }
+
+    .team_name {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .team_title {
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .team_desc {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .team_icon {
+      width: 4vw;
+      height: 4vw;
+    }
   }
 }

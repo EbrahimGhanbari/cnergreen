@@ -8,7 +8,7 @@ import Cover from "../Utilities/Cover";
 
 import "./CnerFoam.scss";
 
-export default function CnerFoam(props) {
+export default function (props) {
   const content = {
     e1: {
       link: "/cnerfoam",

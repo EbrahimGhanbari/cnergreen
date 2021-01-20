@@ -3,29 +3,29 @@
     {
       "name": "Ali Telmadarreie",
       "title": "Co-Founder & CEO",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n      tempor incididunt ut ero labore et dolore.",
-      "link": "https://www.google.ca",
+      "desc": "People-oriented and enthusiastic. Background in petroleum engineering and complex fluids. Experienced working in multidisciplinary environments.",
+      "link": "https://www.linkedin.com/in/ali-telmadarreie-36469140/",
       "img": "team_1.jpg"
     },
     {
       "name": "Steven Bryant",
-      "title": "Co-Founder & CTO",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n      tempor incididunt ut ero labore et dolore.",
-      "link": "https://www.google.ca",
+      "title": "Co-Founder & Director",
+      "desc": "Scientist and leader. Background in nanomaterial and fluid flow in porous media. Experienced in leading multidisciplinary groups and projects.",
+      "link": "https://schulich.ucalgary.ca/contacts/steven-bryant",
       "img": "team_2.jpg"
     },
     {
       "name": "Rodger Bernar",
       "title": "Chief Operationg Officer",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n      tempor incididunt ut ero labore et dolore.",
-      "link": "https://www.google.ca",
+      "desc": "Manager and Engineer. Decades of experience in field operation, process engineering, and technology commercialization.",
+      "link": "https://www.linkedin.com/in/rfbernar/",
       "img": "team_3.jpg"
     },
     {
       "name": "Alfred Fischer",
       "title": "Senior Advisor",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n      tempor incididunt ut ero labore et dolore.",
-      "link": "https://www.google.ca",
+      "desc": "Passionate mentor. Decades of experience in technology commercialization, enhanced oil recovery, and field operation.",
+      "link": "www.cnergreen.ca",
       "img": "team_4.gif"
     }
   ]

@@ -1,0 +1,27 @@
+{
+  "content": {
+    "e1": {
+      "text": [
+        "Efficient Pressure Maintenance",
+        "CnerFoam maintain pressure in parent well more effectively (higher pressure for longer time with less material usage) thus preventing fraction driven interactions or frac hit."
+      ]
+    },
+    "e2": {
+      "text": [
+        "Non Damaging Characteristics",
+        "CnerFoam has low leak off rate and reduce water usage at least by 80% (+ 200%). CnerFoam treatment does not impact the flow of hydrocarbon in parent well including water sensitive reservoirs reducing the risk of productivity loss and formation damage."
+      ]
+    },
+    "e3": {
+      "text": [
+        "CO2 Enhanced Oil Recovery",
+        "In addition to any gases, CnerFoam can be also generated with liquid/supercritical CO2, creates high viscosity at reservoir condition, block short circuits created from CO2 injection and improve oil recovery an CO2 storage."
+      ]
+    }
+  },
+  "cover": {
+    "title": "Why Cnergreen",
+    "img": "cover_2.jpg",
+    "text": "CnerFoam: step-change improvement vs status quo"
+  }
+}

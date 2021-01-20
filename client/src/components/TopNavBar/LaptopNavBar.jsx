@@ -17,7 +17,16 @@ export default function (props) {
             </a>
           </li>
           <li>
-            <Dropdown />
+            <Dropdown
+              options={[
+                [" Enhanced Oil Recovery", "/#/enhance_oil_recovery"],
+                [
+                  " Fracture Driven Interaction",
+                  "/#/fracture_driven_interaction",
+                ],
+              ]}
+              title={"Solution"}
+            />
           </li>
           <li>
             <a className="topButton" href="/#/team">
