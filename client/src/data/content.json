@@ -26,9 +26,9 @@
   },
   "Home_Page": {
     "gridInputTop": {
-      "e1": ["Enhanced Oil Recovery", "rig.png"],
-      "e2": ["Fracture Driven Interaction", "foam.png"],
-      "e3": ["Request Demo", "stat.png"]
+      "e1": ["Enhanced Oil Recovery", "rig.png", "/#/underconstruction"],
+      "e2": ["Fracture Driven Interaction", "foam.png", "/#/underconstruction"],
+      "e3": ["Projects", "stat.png", "/#/underconstruction"]
     },
     "collaborators": [
       ["collaborator_1.png", "https://www.ucalgary.ca/"],
