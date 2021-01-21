@@ -2,6 +2,7 @@ import React from "react";
 import Dropdown from "../Animation/Dropdown";
 
 import "./LaptopNavBar.scss";
+const webData = require("../../data/content.json").Home_Page;
 
 export default function (props) {
   return (
@@ -19,11 +20,9 @@ export default function (props) {
           <li>
             <Dropdown
               options={[
-                [" Enhanced Oil Recovery", "/#/enhance_oil_recovery"],
-                [
-                  " Fracture Driven Interaction",
-                  "/#/fracture_driven_interaction",
-                ],
+                [webData.gridInputTop.e1[0], webData.gridInputTop.e1[2]],
+                [webData.gridInputTop.e2[0], webData.gridInputTop.e2[2]],
+                [webData.gridInputTop.e3[0], webData.gridInputTop.e3[2]],
               ]}
               title={"Solution"}
             />

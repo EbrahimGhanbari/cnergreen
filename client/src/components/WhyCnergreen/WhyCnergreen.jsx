@@ -6,7 +6,6 @@ import Cover from "../Utilities/Cover";
 import Divider from "../Utilities/Divider";
 import TextCenter from "../Utilities/TextCenter";
 import TextGraph from "./TextGraph";
-import { plot } from "plotly.js";
 
 const plotData = require("../../data/graph.json");
 const EOR = plotData.EOR;
