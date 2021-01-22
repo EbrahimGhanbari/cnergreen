@@ -32,7 +32,7 @@
 .extra_space {
   padding-top: 40vw;
 }
-@media screen and (min-width: 350px) and (max-width: 539px) {
+@media screen and (max-width: 539px) {
   .textImagContainer {
     padding-left: 3vw;
     padding-right: 3vw;
@@ -111,7 +111,7 @@
         padding-bottom: 2vw;
       }
       .textImagContent {
-        font-size: 2.5vw;
+        font-size: 2vw;
       }
     }
 
@@ -139,11 +139,12 @@
       width: 45vw;
 
       .textImagTitle {
-        font-size: 3.5vw;
+        font-size: 2.5vw;
         padding-bottom: 2vw;
       }
       .textImagContent {
-        font-size: 2vw;
+        font-size: 1.8vw;
+        line-height: normal;
       }
     }
 
