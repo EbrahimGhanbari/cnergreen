@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import TopNavbar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import TextImage from "../Utilities/TextImage";
-import Divider from "../Utilities/Divider";
 import Cover from "../Utilities/Cover";
 
 import "./CnerFoam.scss";
@@ -14,6 +13,7 @@ export default function (props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div>
       <TopNavbar />
