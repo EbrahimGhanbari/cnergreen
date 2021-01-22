@@ -3,3 +3,24 @@
 .space_text_center_why_cnergreen {
   height: 30vw;
 }
+
+@media screen and (min-width: 350px) and (max-width: 539px) {
+  .space_text_center_why_cnergreen {
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+  .space_text_center_why_cnergreen {
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+  .space_text_center_why_cnergreen {
+    height: 35vw;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+}
