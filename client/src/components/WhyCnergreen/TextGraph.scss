@@ -1,1 +1,126 @@
 @import "../../styles/variables.scss";
+.textGraphContainer {
+  display: flex;
+  align-items: center;
+  //   flex-direction: column;
+
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: 6vw;
+
+  .textGraphSubContainer {
+    padding-top: 0vw;
+    width: 40vw;
+    font-family: $title-font;
+
+    .textGraphTitle {
+      font-weight: 700;
+      font-size: 35px;
+      padding-bottom: 2vw;
+    }
+    .textGraphContent {
+      font-size: 23px;
+      line-height: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .textGraphContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 6vw;
+    padding-bottom: 4vw;
+
+    .textGraphSubContainer {
+      padding-top: 0vw;
+      width: 65vw;
+      font-family: $title-font;
+
+      .textGraphTitle {
+        text-align: center;
+        font-size: 22px;
+        padding-bottom: 2vw;
+      }
+      .textGraphContent {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .textGraphContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 6vw;
+    padding-bottom: 4vw;
+
+    .textGraphSubContainer {
+      padding-top: 0vw;
+      width: 65vw;
+      .textGraphTitle {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 2vw;
+      }
+      .textGraphContent {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
+  .textGraphContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+
+    .textGraphSubContainer {
+      padding-top: 0vw;
+      width: 40vw;
+      .textGraphTitle {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 2vw;
+      }
+      .textGraphContent {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1350px) {
+  .textGraphContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+
+    .textGraphSubContainer {
+      padding-top: 0vw;
+      width: 40vw;
+      .textGraphTitle {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 2vw;
+      }
+      .textGraphContent {
+        font-size: 20px;
+      }
+    }
+  }
+}

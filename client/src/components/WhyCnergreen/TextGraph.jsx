@@ -6,14 +6,14 @@ import Plotly from "../Utilities/Plotly";
 
 export default function TextGraph({ content, direction, layout, data }) {
   return (
-    <div className={`textImagContainer ${direction}`}>
-      <div className="textImagSubContainer">
-        <div className="textImagTitle">
+    <div className={`textGraphContainer ${direction}`}>
+      <div className="textGraphSubContainer">
+        <div className="textGraphTitle">
           <hr></hr>
           {content.text[0]}
           <hr></hr>
         </div>
-        <div className="textImagContent">{content.text[1]}</div>
+        <div className="textGraphContent">{content.text[1]}</div>
       </div>
 
       <div>
