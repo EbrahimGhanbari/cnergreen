@@ -3,9 +3,10 @@ import React, { useEffect } from "react";
 import TopNavbar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import Cover from "../Utilities/Cover";
-import Divider from "../Utilities/Divider";
 import TextCenter from "../Utilities/TextCenter";
 import TextGraph from "./TextGraph";
+
+import "./WhyCnergreen.scss";
 
 const plotData = require("../../data/graph.json");
 const EOR = plotData.EOR;
@@ -28,12 +29,11 @@ export default function (props) {
         title={webData.cover.title}
         text={webData.cover.text}
       />
-      <Divider height={"40vh"}></Divider>
+      <div className="space_text_center_why_cnergreen"></div>
       <TextCenter
         title={webData.textCenter.title}
         content={webData.textCenter.content}
       />
-      <Divider height={"20vh"}></Divider>
       <TextGraph
         direction={"left"}
         content={content.e1}
@@ -52,7 +52,6 @@ export default function (props) {
           y1: 10000,
         }}
       />
-      <Divider height={"60vh"}></Divider>
       <TextGraph
         onEnterViewport={() => console.log("enter")}
         direction={"right"}
@@ -72,7 +71,6 @@ export default function (props) {
           y1: 10000,
         }}
       />
-      <Divider height={"60vh"}></Divider>
       <TextGraph
         onEnterViewport={() => console.log("enter")}
         direction={"left"}
@@ -92,7 +90,6 @@ export default function (props) {
           y1: 70,
         }}
       />
-      <Divider height={"60vh"}></Divider>
 
       <Footer />
     </div>

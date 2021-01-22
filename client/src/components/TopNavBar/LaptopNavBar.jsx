@@ -23,7 +23,7 @@ export default function (props) {
                 [webData.content.e1.text[0], webData.content.e1.link],
                 [webData.content.e2.text[0], webData.content.e2.link],
               ]}
-              title={"Solution"}
+              title={"Application"}
             />
           </li>
           <li>
