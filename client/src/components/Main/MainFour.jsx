@@ -5,6 +5,7 @@ import "./MainFour.scss";
 export default function ({ gridInput }) {
   return (
     <div className="MainFour">
+      <h1 className="MainFour_1">Our Partners</h1>
       <hr />
       {gridInput.map((input) => (
         <a href={input[1]} target="_blank">

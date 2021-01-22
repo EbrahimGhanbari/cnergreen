@@ -28,11 +28,11 @@ export default function (props) {
               />
             </div>
             <div className="footer_map">
-              <a href="/team">
+              <a href="/#/team">
                 <img src="about_us.png" alt="Italian Trulli" />
               </a>
               <hr></hr>
-              <a href="/contact">
+              <a href="/#/contact">
                 <img src="contact_us.png" alt="Italian Trulli" />
               </a>
             </div>

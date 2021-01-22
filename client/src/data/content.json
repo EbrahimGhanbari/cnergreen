@@ -30,6 +30,7 @@
       "e2": ["Fracture Driven Interaction", "foam.png", "/#/underconstruction"],
       "e3": ["Projects", "stat.png", "/#/underconstruction"]
     },
+    "collaborators_title": "Our Partners",
     "collaborators": [
       ["collaborator_1.png", "https://www.ucalgary.ca/"],
       ["collaborator_3.png", "https://innovatecalgary.com/"],
@@ -132,5 +133,11 @@
         "img": "team_4.gif"
       }
     ]
-  }
+  },
+  "Contact_Page": {
+    "title": "Contact Us",
+    "text": "Have a question? We can help find an answer!",
+    "email": "info@cnergreen.com"
+  },
+  "Footer_Page": { "cnergreen_linkdin": "", "cnergreen_youtube": "" }
 }

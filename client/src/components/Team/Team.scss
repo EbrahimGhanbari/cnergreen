@@ -26,7 +26,7 @@
     padding-right: 7vw;
   }
   .divider-4 {
-    height: 1900px;
+    height: 380vw;
   }
   .divider-3 {
     height: 0px;
@@ -35,7 +35,7 @@
 
 @media screen and (min-width: 540px) and (max-width: 850px) {
   .divider-4 {
-    height: 250px;
+    height: 20vw;
   }
   .divider-3 {
     height: 0px;
@@ -46,17 +46,25 @@
   }
 }
 
-@media screen and (min-width: 850px) and (max-width: 1350px) {
+@media screen and (min-width: 850px) and (max-width: 1000px) {
   .divider-3 {
     height: 30px;
   }
   .divider-4 {
-    height: 280px;
+    height: 25vw;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
+  .divider-3 {
+    height: 30px;
+  }
+  .divider-4 {
+    height: 18vw;
   }
 }
 
 @media screen and (min-width: 1350px) {
   .divider-4 {
-    height: 250px;
+    height: 18vw;
   }
 }
