@@ -6,11 +6,14 @@ import "./Temporary.scss";
 
 export default function (props) {
   return (
-    <div className="topSection">
+    <div className="contact_us">
       <TopNavBar />
-      <div className="contactTitle">This page is Coming Soon.</div>
-
-      <div className="contactText">
+      <div className="contact_us_1">
+        <hr></hr>
+        This page is Coming Soon.
+        <hr></hr>
+      </div>
+      <div className="contact_us_2">
         <div>We are happy to hear from you!</div>
         <div>
           <a href="mailto:info@cnergreen.com">info@cnergreen.com</a>

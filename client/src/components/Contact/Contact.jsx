@@ -4,12 +4,15 @@ import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import "./Contact.scss";
 
-function Contact(props) {
+export default function (props) {
   return (
     <div className="contact_us">
       <TopNavBar />
-      <p className="contact_us_1">Contact Us</p>
-
+      <div className="contact_us_1">
+        <hr></hr>
+        Contact Us
+        <hr></hr>
+      </div>
       <div className="contact_us_2">
         <div>Have a question? We can help find an answer!</div>
         <div>
@@ -20,5 +23,3 @@ function Contact(props) {
     </div>
   );
 }
-
-export default Contact;

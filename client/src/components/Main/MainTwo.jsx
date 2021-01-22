@@ -22,7 +22,7 @@ export default function ({ gridInput }) {
 
   return (
     <div className="MainTwo">
-      <a href="/team">
+      <a href="/#/underconstruction">
         <img
           style={pictureWidthStyle}
           onMouseMove={onMouse}
@@ -32,7 +32,7 @@ export default function ({ gridInput }) {
         />
         <p> {gridInput.e1[0]}</p>
       </a>
-      <a href="/team">
+      <a href="/#/underconstruction">
         <img
           style={pictureWidthStyle}
           onMouseMove={onMouse}
@@ -42,7 +42,7 @@ export default function ({ gridInput }) {
         />
         <p>{gridInput.e2[0]}</p>
       </a>
-      <a href="/team">
+      <a href="/#/underconstruction">
         <img
           style={pictureWidthStyle}
           onMouseMove={onMouse}
