@@ -8,7 +8,7 @@ export default function () {
         <p>Clean and Efficient Hydrocarbon Production</p>
         <div className="MainOne_1_1">
           <div className="line" id="left_line"></div>
-          <a href="/contact">
+          <a href="/#/contact">
             <button className="button_blue">Contact</button>
           </a>
           {/* <button className="button_blue">

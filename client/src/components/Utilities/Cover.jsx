@@ -5,12 +5,22 @@ import "./Cover.scss";
 export default function Cover(props) {
   return (
     <div className="cover">
-      <Trail open={true} xValue={-300} direction={"horizontal"}>
+      <Trail
+        style={{ height: "0vw" }}
+        open={true}
+        xValue={-300}
+        direction={"horizontal"}
+      >
         <div>
           <img src={props.img} alt="main pic" />
         </div>
       </Trail>
-      <Trail open={true} xValue={300} direction={"horizontal"}>
+      <Trail
+        style={{ height: "0vw" }}
+        open={true}
+        xValue={300}
+        direction={"horizontal"}
+      >
         <div className="cover_box">
           {props.title}
           <p>{props.text}</p>

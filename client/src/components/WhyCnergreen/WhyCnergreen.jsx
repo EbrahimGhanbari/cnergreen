@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import TopNavbar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
@@ -16,6 +16,9 @@ const webData = require("../../data/content.json").WhyCnergreen_Page;
 
 export default function (props) {
   const content = webData.content;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
