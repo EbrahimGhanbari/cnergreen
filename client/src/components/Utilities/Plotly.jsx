@@ -161,7 +161,7 @@ export default function (props) {
           ...layout,
           width: 0.7 * size.width,
           height: 0.6 * size.width,
-          font: { ...layout.font, size: 14 },
+          font: { ...layout.font, size: 16 },
         })
       : console.log();
     size.width >= 1000 && size.width < 1350
