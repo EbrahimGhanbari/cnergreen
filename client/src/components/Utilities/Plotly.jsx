@@ -138,6 +138,7 @@ export default function (props) {
       autoexpand: true,
     },
   });
+
   useEffect(() => {
     size.width <= 539
       ? setLayout({
@@ -154,7 +155,7 @@ export default function (props) {
           height: 0.8 * size.width,
           font: { ...layout.font, size: 13 },
         })
-      : setLayout({ ...layout });
+      : console.log();
     size.width >= 800 && size.width < 1000
       ? setLayout({
           ...layout,
@@ -162,13 +163,13 @@ export default function (props) {
           height: 0.6 * size.width,
           font: { ...layout.font, size: 14 },
         })
-      : setLayout({ ...layout });
+      : console.log();
     size.width >= 1000 && size.width < 1350
       ? setLayout({
           ...layout,
-          width: 0.55 * size.width,
-          height: 0.5 * size.width,
-          font: { ...layout.font, size: 14 },
+          width: 600,
+          height: 540,
+          font: { ...layout.font, size: 18 },
           margin: {
             l: 100,
             r: 70,
@@ -178,13 +179,13 @@ export default function (props) {
             autoexpand: true,
           },
         })
-      : setLayout({ ...layout });
+      : console.log();
     size.width >= 1350
       ? setLayout({
           ...layout,
-          width: 0.55 * size.width,
-          height: 0.5 * size.width,
-          font: { ...layout.font, size: 16 },
+          width: 0.45 * size.width,
+          height: 0.4 * size.width,
+          font: { ...layout.font, size: 18 },
           margin: {
             l: 100,
             r: 70,
@@ -194,7 +195,7 @@ export default function (props) {
             autoexpand: true,
           },
         })
-      : setLayout({ ...layout });
+      : console.log();
   }, [useWindowSize()]);
 
   // eslint-disable-next-line array-callback-return
