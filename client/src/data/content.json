@@ -14,7 +14,7 @@
         "img": "cnerfoam_2.jpg",
         "text": [
           "Platform technology, not a single product",
-          "Not limited to a certain type of chemicals, nanoparticles, or gas type (N2, CO2, natural gas, butane, steam, the combination of gases). CnerFoam can be also designed with non-aqueous liquids i.e. waterless foam."
+          "Not limited to a certain type of chemicals, nanoparticles, or gas type (N₂, CO₂, natural gas, butane, steam, the combination of gases). CnerFoam can be also designed with non-aqueous liquids i.e. waterless CnerFoam."
         ]
       }
     },
@@ -30,7 +30,6 @@
       "e2": ["Fracture Driven Interaction", "foam.png", "/#/underconstruction"],
       "e3": ["Projects", "stat.png", "/#/underconstruction"]
     },
-    "collaborators_title": "Our Partners",
     "collaborators": [
       ["collaborator_1.png", "https://www.ucalgary.ca/"],
       ["collaborator_3.png", "https://innovatecalgary.com/"],
@@ -49,26 +48,26 @@
         "link": "/#/cnerfoam",
         "img": "foam_product.png",
         "text": [
-          "CNERFOAM®",
-          "Innovative nanoparticle-based stable viscous foam and injection technology",
-          "Access un-swept reservoir increasing oil recovery and CO₂ storage",
-          "Maintains pressure in parent well avoiding fracture driven interactions, well damage, and production loss"
+          "CnerFoam®",
+          "Innovative and resilient nanoparticle-based foam and injection technology",
+          "Prevent short circuit and open access to un-swept reservoir increasing oil recovery and CO₂ storage",
+          "Maintains pressure in parent well, avoiding fracture driven interactions, well damage, and production loss"
         ]
       },
       "e2": {
         "link": "/#/why_cnergreen",
         "img": "dollar.png",
         "text": [
-          "Why Cnergreen?",
-          "A unique team with more than 120 years of industry and management experience to deliver innovative solutions",
+          "Why CNERGREEN?",
+          "A unique team with more than 100 years of industry, management, and technology commercialization experience to deliver innovative solutions",
           "Customized products to reservoir specific and application specific properties to ensure stability",
-          "Made with commercially available components and any gas type (CO₂, N₂, natural gas, steam)"
+          "Made with commercially available components and any gas type (CO₂, N₂, natural gas, steam)- high scalability"
         ]
       }
     },
     "textCenter": {
       "title": "CNERGREEN’s MISSION",
-      "content": " is to enable more responsible oil production by increasing the efficiency of EOR through lower costs and accelerated timelines, and promotes more sustainable EOR through a reduced environmental impact of production and avoided emissions of CO₂."
+      "content": " is to enable cleaner enhanced oil recovery and improve CO₂ storage efficiency via resilient nanoparticle based foam technology."
     }
   },
   "WhyCnergreen_Page": {
@@ -76,7 +75,7 @@
       "e1": {
         "text": [
           "Efficient Pressure Maintenance",
-          "CnerFoam maintain pressure in parent well more effectively (higher pressure for longer time with less material usage) thus preventing fraction driven interactions or frac hit."
+          "CnerFoam maintains pressure in parent well more effectively (higher pressure for a longer time with less material usage) thus preventing fraction driven interactions or frac hit."
         ]
       },
       "e2": {
@@ -87,19 +86,19 @@
       },
       "e3": {
         "text": [
-          "CO2 Enhanced Oil Recovery",
-          "In addition to any gases, CnerFoam can be also generated with liquid/supercritical CO2, creates high viscosity at reservoir condition, block short circuits created from CO2 injection and improve oil recovery an CO2 storage."
+          "CO₂ Enhanced Oil Recovery",
+          "In addition to any gases, CnerFoam can be also generated with liquid and supercritical CO₂, it creates high viscosity at reservoir condition, blocks short circuits created from CO₂ injection and improves oil recovery and CO₂ storage."
         ]
       }
     },
     "cover": {
       "img": "cover_2.jpg",
-      "title": "Why Cnergreen",
-      "text": "CnerFoam: step-change improvement vs status quo"
+      "title": "Why CNERGREEN",
+      "text": "CnerFoam: a unique solution that can be tailored to different applications"
     },
     "textCenter": {
       "title": "CNERGREEN’s",
-      "content": " core technology integrates advanced material science with classical reservoir engineering to create novel solutions for long-standing challenges for recovering oil from mature and low-efficiency reservoirs. Superior stability and tunability of CnerFoam will result is step-change improvement compared to existing solutions. CnerFoam is scalable and tunable- unlike existing products which are one size fit all solution."
+      "content": " core technology integrates advanced material science with classical reservoir engineering to create novel solutions for long-standing challenges for recovering oil from mature and low-efficiency reservoirs. Superior stability and tunability of CnerFoam will result in step-change improvement compared to existing solutions. CnerFoam is scalable and tunable- unlike existing products which are one size fit all solution."
     }
   },
   "Team_Page": {
@@ -135,9 +134,16 @@
     ]
   },
   "Contact_Page": {
-    "title": "Contact Us",
-    "text": "Have a question? We can help find an answer!",
-    "email": "info@cnergreen.com"
+    "title": "Contact us",
+    "subtitle": [
+      "Have a question? Do you need more info? Do you have a project in mind?",
+      "We will be happy to hear from you!"
+    ],
+    "email": "info@cnergreen.ca"
   },
-  "Footer_Page": { "cnergreen_linkdin": "", "cnergreen_youtube": "" }
+  "Temporary_Page": {
+    "title": "Coming soon…",
+    "subtitle": "We will be happy to hear from you!",
+    "email": "info@cnergreen.ca"
+  }
 }

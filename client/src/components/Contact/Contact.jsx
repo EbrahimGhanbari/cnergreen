@@ -4,19 +4,22 @@ import TopNavBar from "../TopNavBar/TopNavBar";
 import Footer from "../Footer";
 import "./Contact.scss";
 
+const webData = require("../../data/content.json").Contact_Page;
+
 export default function (props) {
   return (
     <div className="contact_us">
       <TopNavBar />
       <div className="contact_us_1">
         <hr></hr>
-        Contact Us
+        {webData.title}
         <hr></hr>
       </div>
       <div className="contact_us_2">
-        <div>Have a question? We can help find an answer!</div>
+        <div>{webData.subtitle[0]}</div>
+        <div>{webData.subtitle[1]}</div>
         <div>
-          <a href="mailto:info@cnergreen.com">info@cnergreen.com</a>
+          <a href={`mailto:${webData.email}`}>{webData.email}</a>
         </div>
       </div>
       <Footer />
