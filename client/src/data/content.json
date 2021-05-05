@@ -6,7 +6,7 @@
         "img": "cnerfoam_1.png",
         "text": [
           "Highly stable and tunable",
-          "CnerFoam can be tailored to specific applications and it remains stable in various conditions including in contact with crude oil (1 cp to + 10,000 cp), high salinity water (+200,000 ppm), and high temperature (+240 °C). CnerFoam viscosity and stability can be tuned on demand."
+          "CnerFoam can be tailored to specific application and it remains stable in various conditions including in contact with crude oil (1 cp to + 10,000 cp), high salinity water (+200,000 ppm), and high temperature (+240 °C). CnerFoam viscosity and stability can be tuned on demand."
         ]
       },
       "e2": {
@@ -67,7 +67,7 @@
     },
     "textCenter": {
       "title": "CNERGREEN’s MISSION",
-      "content": " is to enable cleaner enhanced oil recovery and improve CO₂ storage efficiency via resilient nanoparticle based foam technology."
+      "content": " is to help the oil industry transition to a low carbon future. We enable oil companies to get more oil out and reduce CO₂ at the same time without drilling new wells via our novel nanoparticle based foam technology that is 20 times stronger than conventional foams."
     }
   },
   "WhyCnergreen_Page": {
@@ -81,13 +81,13 @@
       "e2": {
         "text": [
           "Non Damaging Characteristics",
-          "CnerFoam has low leak off rate and reduce water usage at least by 80% (+ 200%). CnerFoam treatment does not impact the flow of hydrocarbon in parent well including water sensitive reservoirs reducing the risk of productivity loss and formation damage."
+          "CnerFoam has low leak off rate and reduces water usage at least by 80% (+ 200%). CnerFoam treatment does not impact the flow of hydrocarbon in parent well including water sensitive reservoirs reducing the risk of productivity loss and formation damage."
         ]
       },
       "e3": {
         "text": [
           "CO₂ Enhanced Oil Recovery",
-          "In addition to any gases, CnerFoam can be also generated with liquid and supercritical CO₂, it creates high viscosity at reservoir condition, blocks short circuits created from CO₂ injection and improves oil recovery and CO₂ storage."
+          "In addition to any gases, CnerFoam can be generated with liquid and supercritical CO₂, it creates high viscosity at reservoir condition, blocks short circuits created from CO₂ injection and improves oil recovery and CO₂ storage."
         ]
       }
     },
@@ -119,7 +119,7 @@
       },
       {
         "name": "Rodger Bernar",
-        "title": "Chief Operationg Officer",
+        "title": "Chief Operating Officer",
         "desc": "Manager and Engineer. Decades of experience in field operation, process engineering, and technology commercialization.",
         "link": "https://www.linkedin.com/in/rfbernar/",
         "img": "team_3.JPG"
@@ -136,7 +136,7 @@
   "Contact_Page": {
     "title": "Contact us",
     "subtitle": [
-      "Have a question? Do you need more info? Do you have a project in mind?",
+      "Do you need more info? Do you have a project in mind?",
       "We will be happy to hear from you!"
     ],
     "email": "info@cnergreen.ca"
